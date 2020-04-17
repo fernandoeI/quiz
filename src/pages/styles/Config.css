@@ -1,0 +1,9 @@
+.Container {
+  font-size: 12pt;
+}
+
+.FormQuestions {
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "¿Cuál es el nombre del Pueblo Mágico?",
+    "optionA": "Tapalpa",
+    "optionB": "Tapijulapa",
+    "optionC": "Taxco",
+    "optionD": "Tlaxco",
+    "answer": "Tapijulapa"
+  },
+  {
+    "name": "¿En qué año se le dió la categoría de Pueblo Mágico?",
+    "optionA": "2009",
+    "optionB": "2015",
+    "optionC": "2010",
+    "optionD": "2014",
+    "answer": "2010"
+  }
+]

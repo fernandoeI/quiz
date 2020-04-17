@@ -1,0 +1,162 @@
+.li:first-child .text {
+  background-color: #a21407;
+}
+.li:nth-child(2) .text {
+  background-color: #ffcc00;
+}
+.li:nth-child(3) .text {
+  background-color: #006a5a;
+}
+.li:nth-child(4) .text {
+  background-color: #6c1d10;
+}
+.li:nth-child(5) .text {
+  background-color: #880185;
+}
+.li:nth-child(6) .text {
+  background-color: #005700;
+}
+.li:nth-child(7) .text {
+  background-color: #003db5;
+}
+
+.li:first-child {
+  transform: rotate(0deg) skewY(-30deg);
+}
+.li:nth-child(2) {
+  transform: rotate(51.4deg) skewY(-30deg);
+}
+.li:nth-child(3) {
+  transform: rotate(102.8deg) skewY(-30deg);
+}
+.li:nth-child(4) {
+  transform: rotate(154.2deg) skewY(-30deg);
+}
+.li:nth-child(5) {
+  transform: rotate(205.6deg) skewY(-30deg);
+}
+.li:nth-child(6) {
+  transform: rotate(257deg) skewY(-30deg);
+}
+.li:nth-child(7) {
+  transform: rotate(309deg) skewY(-39deg);
+}
+
+.circle {
+  width: 25em;
+  height: 25em;
+  border: 1px solid black;
+  position: relative;
+  padding: 0;
+  margin: 1em auto;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+}
+.li {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+}
+.text {
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  display: block;
+  transform: skewY(30deg) rotate(25.5deg);
+  padding-top: 20px;
+  cursor: pointer;
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 50px solid black;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  z-index: 1;
+}
+.button {
+  margin: 20% 0% 0% 30%;
+}
+/*==========  Structure  ==========*/
+.btn-push {
+  position: relative;
+  top: 0px;
+  font-family: "Open Sans";
+  text-decoration: none;
+  font-size: 25px;
+  background: #f7f7f7;
+  padding: 15px 50px;
+  margin: 0 10px;
+  border: 1px solid #c4c4c4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 0px #c4c4c4;
+  -moz-box-shadow: 0px 5px 0px #c4c4c4;
+  -ms-box-shadow: 0px 5px 0px #c4c4c4;
+  -o-box-shadow: 0px 5px 0px #c4c4c4;
+  box-shadow: 0px 5px 0px #c4c4c4;
+  color: #222;
+  text-shadow: 1px 1px 1px #fff;
+  -webkit-transition: All 250ms ease;
+  -moz-transition: All 250ms ease;
+  -o-transition: All 250ms ease;
+  -ms-transition: All 250ms ease;
+  transition: All 250ms ease;
+}
+/*==========  Active State  ==========*/
+.btn-push:active {
+  position: relative;
+  top: 5px;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-transition: All 250ms ease;
+  -moz-transition: All 250ms ease;
+  -o-transition: All 250ms ease;
+  -ms-transition: All 250ms ease;
+  transition: All 250ms ease;
+}
+/*==========  Navy  ==========*/
+.btn-push.navy {
+  background: #f57936;
+  color: #fff;
+  border: 1px solid #bc4809;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 0px #bc4809;
+  -moz-box-shadow: 0px 5px 0px #bc4809;
+  -ms-box-shadow: 0px 5px 0px #bc4809;
+  -o-box-shadow: 0px 5px 0px #bc4809;
+  box-shadow: 0px 5px 0px #bc4809;
+  text-shadow: 1px 1px 1px #bc4809;
+}
+.start-rotate {
+  animation: start-rotate 1s linear infinite;
+}
+
+@keyframes start-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.stop-rotate {
+  animation-play-state: paused;
+}
+
+.h6 {
+  color: #f2f2f2;
+}
