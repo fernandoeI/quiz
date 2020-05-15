@@ -7,7 +7,7 @@ const config = {
   projectId: "quiz-ea9c3",
   storageBucket: "quiz-ea9c3.appspot.com",
   messagingSenderId: "29618902322",
-  appId: "1:29618902322:web:f7bc6937cdfc4b9162b32b"
+  appId: "1:29618902322:web:f7bc6937cdfc4b9162b32b",
 };
 
 // Initialize Firebase

@@ -5,10 +5,11 @@ import logo from "../assets/img/Logo.png";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import firebase from "firebase";
 import classes from "./styles/Home.module.css";
+import Score from "../components/Score";
 
-const videoSource = "https://quizsierra.000webhostapp.com/sparkling_water.mp4";
+const videoSource = "https://quizsierra.000webhostapp.com/fondo.mp4";
 class Home extends Component {
-  state = { isSignedIn: false };
+  state = { isSignedIn: false, user: null, player: null, profilePicture: null };
   uiConfig = {
     signInFlow: "popup",
     signInOptions: [firebase.auth.FacebookAuthProvider.PROVIDER_ID],
@@ -19,8 +20,16 @@ class Home extends Component {
 
   componentDidMount = () => {
     firebase.auth().onAuthStateChanged((user) => {
-      this.setState({ isSignedIn: !!user });
-      console.log("user", user);
+      if (user) {
+        this.setState({
+          isSignedIn: true,
+          user: user.uid,
+          player: user.displayName,
+          profilePicture: user.photoURL,
+        });
+      } else {
+        this.setState({ isSignedIn: false });
+      }
     });
   };
 
@@ -31,7 +40,7 @@ class Home extends Component {
           <title>Turismo - Quiz</title>
         </Helmet>
         <div className={classes.Container}>
-          <video autoPlay="autoplay" loop="loop" className="">
+          <video autoPlay="autoplay" loop="loop">
             <source src={videoSource} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -44,37 +53,49 @@ class Home extends Component {
 
               {this.state.isSignedIn ? (
                 <div>
-                  <div class="col s12 m8 offset-m2 l6 offset-l3">
-                    <div class="card-panel grey lighten-5 z-depth-1">
-                      <div class="row valign-wrapper">
-                        <div class="col s2">
+                  <div className="col s12 m12 l12">
+                    <div className="card-panel grey lighten-5 z-depth-1">
+                      <div className="row valign-wrapper">
+                        <div className="col s12">
                           <img
                             src={firebase.auth().currentUser.photoURL}
-                            alt="profile picture"
-                            class="circle responsive-img"
+                            alt="profile"
+                            className="circle responsive-img"
                           />
-                        </div>
-                        <div class="col s10">
-                          <span class="black-text">
+                          <span className="col s12 black-text">
                             Bienvenido {firebase.auth().currentUser.displayName}
                           </span>
-                          <button
-                            onClick={() => firebase.auth().signOut()}
-                            className="btn"
-                          >
-                            Cerrar Sesión!
-                          </button>
+
+                          <Score />
+                          <div className="button">
+                            <button className="btn-push navy">
+                              <Link
+                                to={{
+                                  pathname: "/ruleta",
+                                  state: {
+                                    user: this.state.user,
+                                    player: this.state.player,
+                                    profilePicture: this.state.profilePicture,
+                                  },
+                                }}
+                                style={{ color: "#FFF" }}
+                              >
+                                JUGAR
+                              </Link>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <ul>
-                    <li>
-                      <Link to="/ruleta" className={classes.BtnPlay}>
-                        JUGAR
-                      </Link>
-                    </li>
-                  </ul>
+                  <div className="col s12 m5 l5 button">
+                    <button
+                      className="btn-push red"
+                      onClick={() => firebase.auth().signOut()}
+                    >
+                      Salir
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <StyledFirebaseAuth

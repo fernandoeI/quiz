@@ -1,6 +1,10 @@
 import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
+
+import "./styles/QuizSummary.css";
+import firebase from "../utils/firebase";
+import "materialize-css/dist/css/materialize.min.css";
 
 class QuizSummary extends Component {
   constructor(props) {
@@ -13,6 +17,11 @@ class QuizSummary extends Component {
       wrongAnswers: 0,
       hintsUsed: 0,
       fiftyFiftyUsed: 0,
+      user: "",
+      isSignedIn: false,
+      uid: null,
+      player: null,
+      profilePicture: null,
     };
   }
 
@@ -27,9 +36,67 @@ class QuizSummary extends Component {
         wrongAnswers: state.wrongAnswers,
         hintsUsed: state.hintsUsed,
         fiftyFiftyUsed: state.fiftyFiftyUsed,
+        uid: state.uid,
+        player: state.player,
+        profilePicture: state.profilePicture,
       });
+
+      // let query = userScore
+      //   .where("user", "!=", null)
+      //   .get()
+      //   .then((snapshot) => {
+      //     if (snapshot.empty) {
+      //       console.log("No matching documents.");
+      //       return;
+      //     }
+
+      //     snapshot.forEach((doc) => {
+      //       console.log(doc.id, "=>", doc.data());
+      //     });
+      //   })
+      //   .catch((err) => {
+      //     console.log("Error getting documents", err);
+      //   });
     }
   }
+
+  saveData = () => {
+    const db = firebase.firestore();
+    const ref = db.collection("score").doc(this.state.uid);
+    ref.get().then((doc) => {
+      if (doc.exists) {
+        const userRef = db.collection("score").doc(this.state.uid);
+        const increaseBy = firebase.firestore.FieldValue.increment(
+          this.state.correctAnswers
+        );
+        const increaseByAttempts = firebase.firestore.FieldValue.increment(1);
+        userRef.update({
+          score: this.state.score,
+          correctAnswers: increaseBy,
+          wrongAnswers: this.state.wrongAnswers,
+          hintsUsed: this.state.hintsUsed,
+          fiftyFiftyUsed: this.state.fiftyFiftyUsed,
+          attempts: increaseByAttempts,
+        });
+      } else {
+        db.collection("score")
+          .doc(this.state.uid)
+          .set({
+            score: this.state.score,
+            correctAnswers: this.state.correctAnswers,
+            wrongAnswers: this.state.wrongAnswers,
+            hintsUsed: this.state.hintsUsed,
+            fiftyFiftyUsed: this.state.fiftyFiftyUsed,
+            user: this.state.uid,
+            attempts: 1,
+            player: this.state.player,
+            profilePicture: this.state.profilePicture,
+          })
+          .then(window.M.toast({ html: "Puntaje agregado correctamente" }))
+          .catch((error) => {});
+      }
+    });
+  };
 
   render() {
     const { state } = this.props.location;
@@ -53,11 +120,12 @@ class QuizSummary extends Component {
         <Fragment>
           <div style={{ textAlign: "center" }}>
             <span className="mdi mdi-check-circle-outline success-icon"></span>
+            <h4>La trivia ha finalizado</h4>
           </div>
-          <h3>El cuestionario ha terminado</h3>
+
           <div className="container stats">
             <h4>{remark}</h4>
-            <h3>Tu puntaje es: {this.state.score.toFixed(0)}&#37;</h3>
+            <h4>Tu puntaje es: {this.state.score.toFixed(0)}&#37;</h4>
             <span className="stat left">Numero total de preguntas: </span>
             <span className="right">{this.state.numberOfQuestions}</span>
             <br />
@@ -82,10 +150,14 @@ class QuizSummary extends Component {
           <section>
             <ul>
               <li>
-                <Link to="/play/quiz">Jugar de nuevo</Link>
+                <Link to="/ruleta" onClick={this.saveData}>
+                  Jugar de nuevo
+                </Link>
               </li>
               <li>
-                <Link to="/">Volver al inicio</Link>
+                <Link to="/" onClick={this.saveData}>
+                  Volver al inicio
+                </Link>
               </li>
             </ul>
           </section>
@@ -94,13 +166,13 @@ class QuizSummary extends Component {
     } else {
       stats = (
         <section>
-          <h1 className="no-stats">No Statistics Available</h1>
+          <h1 className="no-stats">No hay puntaje disponible</h1>
           <ul>
             <li>
-              <Link to="/play/quiz">Take a Quiz</Link>
+              <Link to="/ruleta">Intentar la trivia</Link>
             </li>
             <li>
-              <Link to="/">Back to Home</Link>
+              <Link to="/">Volver al inicio</Link>
             </li>
           </ul>
         </section>
@@ -109,7 +181,7 @@ class QuizSummary extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>Quiz App - Summary</title>
+          <title>Trivia</title>
         </Helmet>
         <div className="quiz-summary">{stats}</div>
       </Fragment>

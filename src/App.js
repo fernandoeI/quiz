@@ -5,7 +5,7 @@ import QuizInstructions from "./components/QuizInstructions";
 import Play from "./components/Play";
 import QuizSummary from "./components/QuizSummary";
 import Config from "./pages/Config";
-import Wheel from "./components/Wheel";
+import Wheel from "./pages/Wheel";
 import Modal from "./components/Modal";
 
 export default function App() {
