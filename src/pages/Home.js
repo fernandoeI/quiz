@@ -7,6 +7,14 @@ import firebase from "firebase";
 import "./styles/Home.css";
 import Score from "../components/Score";
 import Loading from "../components/Loading";
+
+
+import RewardIcon from "@material-ui/icons/EmojiEvents";
+import HelpIcon from "@material-ui/icons/Help";
+
+import Yellow from "@material-ui/core/colors/yellow";
+import BlueGrey from "@material-ui/core/colors/blueGrey";
+
 class Home extends Component {
   state = {
     isSignedIn: false,
@@ -54,7 +62,7 @@ class Home extends Component {
           {isSignedIn ? (
             <div>
               <div>
-                <img src={logo} alt="Logo Turismo" width="200" />
+                <img src={logo} alt="Logo Turismo" width="150" />
               </div>
               <div className="col s12 m12 l12">
                 <div className="card-panel grey lighten-5 z-depth-1">
@@ -68,9 +76,22 @@ class Home extends Component {
                       <span className="col s10 black-text">
                         Bienvenido {firebase.auth().currentUser.displayName}
                       </span>
-
+                      <br/><br/>
+                      
+                      <a>
+                        <RewardIcon className="col s2" style={{ fontSize: 40, color: Yellow[700], cursor: "pointer",}} />
+                        <span className="col s4" style={{textAlign: "left", marginTop: 7,}}>Recompensas</span> 
+                      </a>
+                      
+                      
+                        <Link to="/play/instructions">
+                          <span className="col s4" style={{textAlign: "right", marginTop: 7,}}>Ayuda</span>
+                          <HelpIcon className="col s2" style={{ fontSize: 40, color: BlueGrey[500], cursor: "pointer", }} />
+                        </Link>
+                     
+                          
                       <Score />
-                      <div>
+                     
                         <button className="btn-push navy">
                           <Link
                             to={{
@@ -83,22 +104,20 @@ class Home extends Component {
                             }}
                             style={{ color: "#FFF" }}
                           >
-                            JUGAR
+                            Jugar
                           </Link>
                         </button>
+
+                        <button
+                          className="btn-push red"
+                          onClick={() => firebase.auth().signOut()}
+                        >
+                          Salir
+                        </button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col s12 m2 l2">
-                <button
-                  className="btn-push red"
-                  onClick={() => firebase.auth().signOut()}
-                >
-                  Salir
-                </button>
-              </div>
             </div>
           ) : (
             <div>

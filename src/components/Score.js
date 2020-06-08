@@ -37,7 +37,7 @@ function Score() {
                   <img
                     src={score.profilePicture}
                     alt="profile"
-                    className="circle responsive-img col s10"
+                    className="circle responsive-img col s8"
                   />
                 </td>
                 <td>{score.player}</td>
@@ -46,6 +46,7 @@ function Score() {
               </tr>
             ))}
           </tbody>
+          
         </table>
       </div>
     </div>

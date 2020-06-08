@@ -50,15 +50,16 @@
   display: block;
 }
 
+
+
 /*==========  Structure  ==========*/
 .btn-push {
-  position: relative;
-  top: 0px;
+  display: inline-block;
   font-family: "Open Sans";
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   background: #f7f7f7;
-  padding: 15px 40px;
+  padding: 15px 20px;
   border: 1px solid #c4c4c4;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -75,6 +76,7 @@
   -o-transition: All 250ms ease;
   -ms-transition: All 250ms ease;
   transition: All 250ms ease;
+  margin-left: 3%;
 }
 /*==========  Active State  ==========*/
 .btn-push:active {

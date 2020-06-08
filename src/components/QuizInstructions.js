@@ -10,60 +10,58 @@ import options from "../assets/img/options.PNG";
 const QuizInstructions = () => (
   <Fragment>
     <Helmet>
-      <title>Quiz Instructions - Quiz App</title>
+      <title>Ayuda</title>
     </Helmet>
     <div className="instructions container">
-      <h1>How to Play the Game</h1>
-      <p>Ensure you read this guide from start to finish.</p>
+      <h1>¿Cómo jugar?</h1>
+      <p>Asegurate de leer esta guia hasta el final.</p>
       <ul className="browser-default" id="main-list">
         <li>
-          The game has a duration of 15 minutes and ends as soon as your time
-          elapses.
+          El juego tiene una duración máxima de 3 minutos
         </li>
-        <li>Each game consists of 15 questions.</li>
+        <li>Cada partida consta de 20 preguntas.</li>
         <li>
-          Every question contains 4 options.
+          Cada pregunta tiene 4 opciones.
           <img src={options} alt="Quiz App options example" />
         </li>
         <li>
-          Select the option which best answers the question by clicking (or
-          selecting) it.
+          Toca la opción que mejor responda la pregunta
           <img src={answer} alt="Quiz App answer example" />
         </li>
         <li>
-          Each game has 2 lifelines namely:
+          Cada partida tiene 7 ayudas:
           <ul id="sublist">
-            <li>2 50-50 chances</li>
-            <li>5 Hints</li>
+            <li>2 50-50 Pistas</li>
+            <li>5 Pistas</li>
           </ul>
         </li>
         <li>
-          Selecting a 50-50 lifeline by clicking the icon
-          <span className="mdi mdi-set-center mdi-24px lifeline-icon"></span>
-          will remove 2 wrong answers, leaving the correct answer and one wrong
-          answer
+          Utiliza la 50-50 pista tocando el icono
+          <span className="mdi mdi-set-center mdi-36px lifeline-icon"></span>
+          
+eliminará 2 respuestas incorrectas, dejando la respuesta correcta y una incorrecta
+
           <img src={fiftyFifty} alt="Quiz App Fifty-Fifty example" />
         </li>
         <li>
-          Using a hint by clicking the icon
-          <span className="mdi mdi-lightbulb-on mdi-24px lifeline-icon"></span>
-          will remove one wrong answer leaving two wrong answers and one correct
-          answer. You can use as many hints as possible on a single question.
+          Utiliza 1 pista tocando el icono
+          <span className="mdi mdi-lightbulb-on mdi-36px lifeline-icon"></span>
+          
+eliminará una respuesta incorrecta dejando dos respuestas incorrectas y una correcta.
+Puede usar tantas sugerencias como sea posible en una sola pregunta.
           <img src={hints} alt="Quiz App hints example" />
         </li>
         <li>
-          Feel free to quit (or retire from) the game at any time. In that case
-          your score will be revealed afterwards.
+        Siéntete libre de abandonar el juego en cualquier momento. En ese caso
+          su puntaje no será revelado
         </li>
-        <li>The timer starts as soon as the game loads.</li>
-        <li>Let's do this if you think you've got what it takes?</li>
+        <li>El temporizador comienza tan pronto como se carga el juego.</li>
+        <li>
+Pon a prueba tus coonocimientos chocos.</li>
       </ul>
       <div>
-        <span className="left">
-          <Link to="/">No take me back</Link>
-        </span>
         <span className="right">
-          <Link to="/play/quiz">Okay, Let's do this!</Link>
+          <Link to="/">Entiendo, regresar...</Link>
         </span>
       </div>
     </div>
