@@ -50,9 +50,7 @@ export default class Wheel extends React.Component {
               className="wheel-item"
               key={index}
               style={{ "--item-nb": index }}
-            >
-              {item}
-            </div>
+            ></div>
           ))}
         </div>
         {isVisible && (

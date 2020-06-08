@@ -1,16 +1,19 @@
+.viewSummary {
+  background: url("https://quizsierra.000webhostapp.com/Villaluz.jpg") no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
 .quiz-summary {
   font-family: "Quicksand", sans-serif;
 }
 span.success-icon {
-  color: #57b846;
+  color: #417991;
   font-size: 7rem;
-}
-
-h1 {
-  color: #57b846;
-  text-align: center;
-  font-size: 3rem;
-  margin-top: -1.5rem;
 }
 
 h2 {
@@ -47,38 +50,9 @@ section ul li {
 }
 
 section ul li a {
-  padding: 1.5rem !important;
-}
-
-section ul li a:hover {
-  color: #f8f8f8;
-}
-
-section ul li:first-child {
-  border: 1px solid #1da1f2;
-  margin-right: 1.5rem;
-  transition: 0.3s linear all;
-}
-
-section ul li:first-child:hover {
-  background-color: #1da1f2;
-}
-
-section ul li:last-child {
-  border: 1px solid #57b846;
-  transition: 0.3s linear all;
-}
-
-section ul li:last-child:hover {
+  padding: 1rem;
+  color: white;
   background-color: #57b846;
-}
-
-section ul li:last-child a {
-  color: #57b846;
-}
-
-section ul li:last-child a:hover {
-  color: #f8f8f8;
 }
 
 .no-stats {
@@ -88,14 +62,12 @@ section ul li:last-child a:hover {
 
 @media (max-width: 768px) {
   .quiz-summary {
-    font-size: 1.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    font-size: 1rem;
   }
 
   div.container.stats {
     margin: 0;
-    padding: 1.5rem;
+    padding: 2rem;
     max-width: 100%;
     width: 100%;
   }

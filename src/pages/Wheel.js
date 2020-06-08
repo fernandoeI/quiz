@@ -10,9 +10,8 @@ export default class App extends Component {
       "Cultura",
       "Tradiciones",
       "Gastronomía",
-      "Turismo y Aventura",
+      "Naturaleza y Aventura",
       "Geografía",
-      "Naturaleza",
     ];
     this.state = {
       uid: null,
@@ -39,13 +38,19 @@ export default class App extends Component {
       return <Redirect to={this.state.redirect} />;
     } else {
       return (
-        <div>
-          <div style={{ backgroundColor: "#035F00" }}>
+        <div className="view">
+          <div
+            style={{
+              backgroundColor: "#035F00",
+              paddingTop: 10,
+            }}
+          >
             <h1
               style={{
                 textAlign: "center",
                 fontWeight: "bolder",
                 color: "#FEDBB3",
+                fontSize: "40pt",
               }}
             >
               Comencemos
@@ -57,6 +62,25 @@ export default class App extends Component {
             player={this.state.player}
             profilePicture={this.state.profilePicture}
           />
+
+          <div
+            style={{
+              backgroundColor: "#035F00",
+              width: "50%",
+              textAlign: "center",
+              marginLeft: "25%",
+            }}
+          >
+            <h1
+              style={{
+                fontWeight: "bolder",
+                color: "#FEDBB3",
+                fontSize: "20pt",
+              }}
+            >
+              Toca la ruleta para girar
+            </h1>
+          </div>
         </div>
       );
     }

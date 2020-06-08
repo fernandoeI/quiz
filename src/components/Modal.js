@@ -3,21 +3,17 @@ import "./styles/Modal.css";
 
 //importacion de iconos
 import CulturaIcon from "@material-ui/icons/AccountBalance";
-import TradicionIcon from "@material-ui/icons/SportsKabaddi";
+import TradicionIcon from "@material-ui/icons/EmojiPeople";
 import GastronomiaIcon from "@material-ui/icons/LocalBar";
 import TurismoIcon from "@material-ui/icons/Map";
-import AventuraIcon from "@material-ui/icons/Pool";
 import GeografiaIcon from "@material-ui/icons/Public";
-import NaturalezaIcon from "@material-ui/icons/Eco";
 
 //importacion de colores
 import red from "@material-ui/core/colors/red";
 import amber from "@material-ui/core/colors/amber";
 import teal from "@material-ui/core/colors/teal";
 import deepOrange from "@material-ui/core/colors/deepOrange";
-import purple from "@material-ui/core/colors/purple";
 import green from "@material-ui/core/colors/green";
-import indigo from "@material-ui/core/colors/indigo";
 
 import { Link } from "react-router-dom";
 export default class Modal extends React.Component {
@@ -60,7 +56,7 @@ export default class Modal extends React.Component {
       case 3:
         return (
           <div key="3">
-            <h5>Turismo y Aventura</h5>
+            <h5>Naturaleza</h5>
             <TurismoIcon style={{ fontSize: 100, color: deepOrange[500] }} />
           </div>
         );
@@ -70,13 +66,6 @@ export default class Modal extends React.Component {
           <div key="4">
             <h5>Geografía</h5>
             <GeografiaIcon style={{ fontSize: 100, color: green[900] }} />
-          </div>
-        );
-      case 5:
-        return (
-          <div key="5">
-            <h5>Naturaleza</h5>
-            <NaturalezaIcon style={{ fontSize: 100, color: indigo[900] }} />
           </div>
         );
       default:
@@ -100,7 +89,7 @@ export default class Modal extends React.Component {
           <div className="modal-body">
             {this.renderSwitch(categoria)}
             <div className="button">
-              <button class="btn-push navy">
+              <button className="btn-push navy">
                 <Link
                   to={{
                     pathname: "/play/quiz",

@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./styles/QuizSummary.css";
 import firebase from "../utils/firebase";
@@ -118,49 +118,48 @@ class QuizSummary extends Component {
     if (state !== undefined) {
       stats = (
         <Fragment>
-          <div style={{ textAlign: "center" }}>
-            <span className="mdi mdi-check-circle-outline success-icon"></span>
-            <h4>La trivia ha finalizado</h4>
+          <div className="viewSummary">
+            <div style={{ textAlign: "center" }}>
+              <span className="mdi mdi-check-circle-outline success-icon"></span>
+            </div>
+            <div className="container stats">
+              <h4>{remark}</h4>
+              <h4>Tu puntaje es: {this.state.score.toFixed(0)}&#37;</h4>
+              <span className="stat left">Numero total de preguntas: </span>
+              <span className="right">{this.state.numberOfQuestions}</span>
+              <br />
+              <span className="stat left">
+                Numero de preguntas contestadas:{" "}
+              </span>
+              <span className="right">
+                {this.state.numberOfAnsweredQuestions}
+              </span>
+              <br />
+              <span className="stat left">
+                Numero de respuestas correctas:{" "}
+              </span>
+              <span className="right">{this.state.correctAnswers}</span> <br />
+              <span className="stat left">
+                Numero de respuestas incorrectas:{" "}
+              </span>
+              <span className="right">{this.state.wrongAnswers}</span>
+              <br />
+              <span className="stat left">Pistas usadas: </span>
+              <span className="right">{this.state.hintsUsed}</span>
+              <br />
+              <span className="stat left">50-50 usados: </span>
+              <span className="right">{this.state.fiftyFiftyUsed}</span>
+            </div>
+            <section>
+              <ul>
+                <li>
+                  <Link to="/" onClick={this.saveData}>
+                    Volver al inicio
+                  </Link>
+                </li>
+              </ul>
+            </section>
           </div>
-
-          <div className="container stats">
-            <h4>{remark}</h4>
-            <h4>Tu puntaje es: {this.state.score.toFixed(0)}&#37;</h4>
-            <span className="stat left">Numero total de preguntas: </span>
-            <span className="right">{this.state.numberOfQuestions}</span>
-            <br />
-            <span className="stat left">Numero de preguntas contestadas: </span>
-            <span className="right">
-              {this.state.numberOfAnsweredQuestions}
-            </span>
-            <br />
-            <span className="stat left">Numero de respuestas correctas: </span>
-            <span className="right">{this.state.correctAnswers}</span> <br />
-            <span className="stat left">
-              Numero de respuestas incorrectas:{" "}
-            </span>
-            <span className="right">{this.state.wrongAnswers}</span>
-            <br />
-            <span className="stat left">Pistas usadas: </span>
-            <span className="right">{this.state.hintsUsed}</span>
-            <br />
-            <span className="stat left">50-50 usados: </span>
-            <span className="right">{this.state.fiftyFiftyUsed}</span>
-          </div>
-          <section>
-            <ul>
-              <li>
-                <Link to="/ruleta" onClick={this.saveData}>
-                  Jugar de nuevo
-                </Link>
-              </li>
-              <li>
-                <Link to="/" onClick={this.saveData}>
-                  Volver al inicio
-                </Link>
-              </li>
-            </ul>
-          </section>
         </Fragment>
       );
     } else {

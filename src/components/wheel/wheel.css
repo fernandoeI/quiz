@@ -22,8 +22,6 @@
   height: calc(var(--wheel-size) + 2 * var(--wheel-border-size));
   padding: 3px;
   margin: auto;
-  background-color: var(--neutral-color);
-  border: solid var(--wheel-color) 3px;
   border-radius: 50%;
   user-select: none;
 }
@@ -63,8 +61,6 @@
   height: var(--wheel-size);
   overflow: hidden;
   border-radius: 50%;
-  border: solid var(--wheel-color) var(--wheel-border-size);
-  background-color: var(--wheel-color);
   transition: transform var(--reset-duration);
   transform: rotate(0deg);
   cursor: pointer;
@@ -78,21 +74,6 @@
         (-360deg * var(--selected-item) / var(--nb-item, 1))
     )
   );
-}
-
-/* Centre de la roue = rond blanc au centre */
-.wheel::after {
-  display: block;
-  position: absolute;
-  content: "";
-  background-color: var(--neutral-color);
-  width: 25px;
-  height: 25px;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
 }
 
 /* Element sur la roue */
@@ -144,8 +125,4 @@
   --slice-width: calc(
     (var(--slice-max-width) / var(--nb-item)) - var(--wheel-slice-spacing)
   );
-  border: solid transparent calc(var(--slice-width) / 2);
-  border-left: solid transparent 0;
-  /* profondeur du triangle = du centre de la roue à la bordure = 300px / 2 */
-  border-right: solid var(--neutral-color) calc(var(--wheel-size) / 2);
 }

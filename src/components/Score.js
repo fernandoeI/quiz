@@ -1,6 +1,5 @@
 import React from "react";
 import firebase from "../utils/firebase";
-import firebase2 from "firebase";
 import "materialize-css/dist/css/materialize.min.css";
 
 function Score() {
@@ -26,7 +25,7 @@ function Score() {
         <table className="centered" style={{ color: "black" }}>
           <thead>
             <tr>
-              <th colspan="2">Usuario</th>
+              <th colSpan="2">Usuario</th>
               <th>Puntaje</th>
               <th>Intentos</th>
             </tr>
@@ -38,7 +37,7 @@ function Score() {
                   <img
                     src={score.profilePicture}
                     alt="profile"
-                    className="circle responsive-img"
+                    className="circle responsive-img col s10"
                   />
                 </td>
                 <td>{score.player}</td>

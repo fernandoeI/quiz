@@ -1,5 +1,4 @@
 .btn {
-  padding: 5px 15px;
   font-size: 18px;
   border: none;
   border-radius: 4px;
@@ -51,9 +50,6 @@
   display: block;
 }
 
-.button {
-  margin: 0% 0% 0% 0%;
-}
 /*==========  Structure  ==========*/
 .btn-push {
   position: relative;
@@ -62,8 +58,7 @@
   text-decoration: none;
   font-size: 25px;
   background: #f7f7f7;
-  padding: 15px 50px;
-  margin: 0 10px;
+  padding: 15px 40px;
   border: 1px solid #c4c4c4;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -84,7 +79,6 @@
 /*==========  Active State  ==========*/
 .btn-push:active {
   position: relative;
-  top: 5px;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   -ms-box-shadow: none !important;

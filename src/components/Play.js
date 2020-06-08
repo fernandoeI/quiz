@@ -67,7 +67,7 @@ class Play extends Component {
     this.setState({ questions: filteredList });
   };
   //Esta línea fue la que le agregué para jalar los datos de firebase, el problema es que los datos los pone después de que jala los datos del json
-  componentDidMount() {
+  componentDidMount = () => {
     shuffleArray(this.state.questions);
     const {
       questions,
@@ -82,8 +82,8 @@ class Play extends Component {
       previousQuestion
     );
     this.startTimer();
-  }
-  componentWillMount() {
+  };
+  componentWillMount = () => {
     let prop = this.props.location.state;
     this.filtrarPreguntas(this.state.questions, prop.categoria);
 
@@ -97,11 +97,11 @@ class Play extends Component {
         profilePicture: prop.profilePicture,
       });
     }
-  }
+  };
 
-  componentWillUnmount() {
+  componentWillUnmount = () => {
     clearInterval(this.interval);
-  }
+  };
 
   displayQuestions = (
     questions = this.state.questions,
@@ -251,7 +251,6 @@ class Play extends Component {
   };
 
   wrongAnswer = () => {
-    navigator.vibrate(1000);
     M.toast({
       html: "Respuesta Incorrecta!",
       classes: "toast-invalid",
@@ -383,7 +382,7 @@ class Play extends Component {
   };
 
   startTimer = () => {
-    const countDownTime = Date.now() + 120000;
+    const countDownTime = Date.now() + 180000;
     this.interval = setInterval(() => {
       const now = new Date();
       const distance = countDownTime - now;
@@ -465,7 +464,27 @@ class Play extends Component {
     }, 1000);
   };
 
+  renderSwitch = (categoria) => {
+    switch (categoria) {
+      case 0:
+        return <h2 className="h2">Cultura</h2>;
+      case 1:
+        return <h2 className="h2">Tradiciones</h2>;
+      case 2:
+        return <h2 className="h2">Gastronomía</h2>;
+      case 3:
+        return <h2 className="h2">Naturaleza</h2>;
+
+      case 4:
+        return <h2 className="h2">Geografía</h2>;
+      default:
+        return "foo";
+    }
+  };
+
   render() {
+    let prop = this.props.location.state;
+
     if (this.state.redirect) {
       return <Redirect to={this.state.redirect} />;
     } else {
@@ -488,64 +507,66 @@ class Play extends Component {
             <audio ref={this.wrongSound} src={wrongNotification}></audio>
             <audio ref={this.buttonSound} src={buttonSound}></audio>
           </Fragment>
-          <div className="questions">
-            <h2 className="h2">Trivia</h2>
-            <div className="lifeline-container">
-              <p>
-                <span
-                  onClick={this.handleFiftyFifty}
-                  className="mdi mdi-set-center mdi-24px lifeline-icon"
-                >
-                  <span className="lifeline">{fiftyFifty}</span>
-                </span>
-              </p>
-              <p>
-                <span
-                  onClick={this.handleHints}
-                  className="mdi mdi-lightbulb-on-outline mdi-24px lifeline-icon"
-                >
-                  <span className="lifeline">{hints}</span>
-                </span>
-              </p>
-            </div>
-            <div className="timer-container">
-              <p>
-                <span className="left" style={{ float: "left" }}>
-                  {currentQuestionIndex + 1} de {numberOfQuestions}
-                </span>
-                <span
-                  className={classnames("right valid", {
-                    warning: time.distance <= 120000,
-                    invalid: time.distance < 30000,
-                  })}
-                >
-                  {time.minutes}:{time.seconds}
-                  <span className="mdi mdi-clock-outline mdi-24px"></span>
-                </span>
-              </p>
-            </div>
-            <h5 className="h5">{currentQuestion.name}</h5>
-            <div className="options-container">
-              <p onClick={this.handleOptionClick} className="option">
-                {currentQuestion.optionA}
-              </p>
-              <p onClick={this.handleOptionClick} className="option">
-                {currentQuestion.optionB}
-              </p>
-            </div>
-            <div className="options-container">
-              <p onClick={this.handleOptionClick} className="option">
-                {currentQuestion.optionC}
-              </p>
-              <p onClick={this.handleOptionClick} className="option">
-                {currentQuestion.optionD}
-              </p>
-            </div>
+          <div className="quizView">
+            <div className="questions">
+              {this.renderSwitch(prop.categoria)}
+              <div className="lifeline-container">
+                <p>
+                  <span
+                    onClick={this.handleFiftyFifty}
+                    className="mdi mdi-set-center mdi-36px lifeline-icon"
+                  >
+                    <span className="lifeline">{fiftyFifty}</span>
+                  </span>
+                </p>
+                <p>
+                  <span
+                    onClick={this.handleHints}
+                    className="mdi mdi-lightbulb-on-outline mdi-36px lifeline-icon"
+                  >
+                    <span className="lifeline">{hints}</span>
+                  </span>
+                </p>
+              </div>
+              <div className="timer-container">
+                <p>
+                  <span className="left" style={{ float: "left" }}>
+                    {currentQuestionIndex + 1} de {numberOfQuestions}
+                  </span>
+                  <span
+                    className={classnames("right valid", {
+                      warning: time.distance <= 120000,
+                      invalid: time.distance < 30000,
+                    })}
+                  >
+                    {time.minutes}:{time.seconds}
+                    <span className="mdi mdi-clock-outline mdi-24px"></span>
+                  </span>
+                </p>
+              </div>
+              <h5 className="h5">{currentQuestion.name}</h5>
+              <div className="options-container">
+                <p onClick={this.handleOptionClick} className="option">
+                  {currentQuestion.optionA}
+                </p>
+                <p onClick={this.handleOptionClick} className="option">
+                  {currentQuestion.optionB}
+                </p>
+              </div>
+              <div className="options-container">
+                <p onClick={this.handleOptionClick} className="option">
+                  {currentQuestion.optionC}
+                </p>
+                <p onClick={this.handleOptionClick} className="option">
+                  {currentQuestion.optionD}
+                </p>
+              </div>
 
-            <div className="button-container">
-              <button id="quit-button" onClick={this.handleButtonClick}>
-                Salir
-              </button>
+              <div className="button-container">
+                <button id="quit-button" onClick={this.handleButtonClick}>
+                  Salir
+                </button>
+              </div>
             </div>
           </div>
         </Fragment>

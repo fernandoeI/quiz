@@ -1,0 +1,18 @@
+/* Style the video: 100% width and height to cover the entire window */
+
+/* Add some content at the bottom of the video/page */
+
+.SubContent {
+  background: url("https://quizsierra.000webhostapp.com/Grutas.jpg") no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
