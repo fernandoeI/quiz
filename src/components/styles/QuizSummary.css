@@ -1,6 +1,6 @@
 .viewSummary {
-  background: url("https://quizsierra.000webhostapp.com/Villaluz.jpg") no-repeat
-    center center fixed;
+  background: url("https://quizsierra.000webhostapp.com/background1.jpg")
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -25,7 +25,6 @@ h4 {
 }
 
 .stats {
-  background-color: #f8f8f8;
   max-width: 50%;
   padding: 1.5rem 2rem 2rem 2rem;
 }

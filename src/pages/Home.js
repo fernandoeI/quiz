@@ -8,12 +8,13 @@ import "./styles/Home.css";
 import Score from "../components/Score";
 import Loading from "../components/Loading";
 
-
 import RewardIcon from "@material-ui/icons/EmojiEvents";
 import HelpIcon from "@material-ui/icons/Help";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 
 import Yellow from "@material-ui/core/colors/yellow";
 import BlueGrey from "@material-ui/core/colors/blueGrey";
+import Red from "@material-ui/core/colors/red";
 
 class Home extends Component {
   state = {
@@ -56,6 +57,10 @@ class Home extends Component {
       <Fragment>
         <Helmet>
           <title>Turismo - Trivia</title>
+          <meta
+            name="description"
+            content="Pon a prueba tus conocimientos, aprende y divierte en Pasaporte Tabasco - Aventura en la Sierra"
+          />
         </Helmet>
 
         <div className="SubContent">
@@ -73,51 +78,76 @@ class Home extends Component {
                         alt="profile"
                         className="circle responsive-img col s2"
                       />
-                      <span className="col s10 black-text">
+                      <span className="col s8 black-text">
                         Bienvenido {firebase.auth().currentUser.displayName}
                       </span>
-                      <br/><br/>
-                      
-                      <a>
-                        <RewardIcon className="col s2" style={{ fontSize: 40, color: Yellow[700], cursor: "pointer",}} />
-                        <span className="col s4" style={{textAlign: "left", marginTop: 7,}}>Recompensas</span> 
-                      </a>
-                      
-                      
-                        <Link to="/play/instructions">
-                          <span className="col s4" style={{textAlign: "right", marginTop: 7,}}>Ayuda</span>
-                          <HelpIcon className="col s2" style={{ fontSize: 40, color: BlueGrey[500], cursor: "pointer", }} />
-                        </Link>
-                     
-                          
-                      <Score />
-                     
-                        <button className="btn-push navy">
-                          <Link
-                            to={{
-                              pathname: "/ruleta",
-                              state: {
-                                user: user,
-                                player: player,
-                                profilePicture: profilePicture,
-                              },
-                            }}
-                            style={{ color: "#FFF" }}
-                          >
-                            Jugar
-                          </Link>
-                        </button>
+                      <ExitToAppIcon
+                        className="col s2"
+                        style={{
+                          fontSize: 40,
+                          color: Red[900],
+                          cursor: "pointer",
+                        }}
+                        onClick={() => firebase.auth().signOut()}
+                      />
+                      <br />
+                      <br />
 
-                        <button
-                          className="btn-push red"
-                          onClick={() => firebase.auth().signOut()}
+                      <Link to="/rewards">
+                        <RewardIcon
+                          className="col s2"
+                          style={{
+                            fontSize: 40,
+                            color: Yellow[700],
+                            cursor: "pointer",
+                          }}
+                        />
+                        <span
+                          className="col s4"
+                          style={{ textAlign: "left", marginTop: 7 }}
                         >
-                          Salir
-                        </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                          Recompensas
+                        </span>
+                      </Link>
+
+                      <Link to="/play/instructions">
+                        <span
+                          className="col s4"
+                          style={{ textAlign: "right", marginTop: 7 }}
+                        >
+                          Ayuda
+                        </span>
+                        <HelpIcon
+                          className="col s2"
+                          style={{
+                            fontSize: 40,
+                            color: BlueGrey[500],
+                            cursor: "pointer",
+                          }}
+                        />
+                      </Link>
+
+                      <Score />
+
+                      <button className="btn-push navy">
+                        <Link
+                          to={{
+                            pathname: "/ruleta",
+                            state: {
+                              user: user,
+                              player: player,
+                              profilePicture: profilePicture,
+                            },
+                          }}
+                          style={{ color: "#FFF" }}
+                        >
+                          Jugar
+                        </Link>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           ) : (
             <div>

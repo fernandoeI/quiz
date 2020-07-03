@@ -6,6 +6,15 @@ import "./styles/QuizSummary.css";
 import firebase from "../utils/firebase";
 import "materialize-css/dist/css/materialize.min.css";
 
+import {
+  FacebookIcon,
+  FacebookShareButton,
+  TwitterIcon,
+  TwitterShareButton,
+  WhatsappShareButton,
+  WhatsappIcon,
+} from "react-share";
+
 class QuizSummary extends Component {
   constructor(props) {
     super(props);
@@ -156,6 +165,38 @@ class QuizSummary extends Component {
                   <Link to="/" onClick={this.saveData}>
                     Volver al inicio
                   </Link>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <ul>
+                <li>
+                  <FacebookShareButton
+                    url="https://quiz-ea9c3.firebaseapp.com/"
+                    quote="Estoy participando para desbloquear una de las siguientes recompensas, SÚMATE para que tú también seas uno de los afortunados ¡Es hora de juntarnos!"
+                    className="Demo__some-network__share-button"
+                  >
+                    <FacebookIcon size={40} round />
+                  </FacebookShareButton>
+                </li>
+                <li>
+                  <TwitterShareButton
+                    url="https://quiz-ea9c3.firebaseapp.com/"
+                    title="Estoy participando para desbloquear una de las siguientes recompensas, SÚMATE para que tú también seas uno de los afortunados ¡Es hora de juntarnos!"
+                    className="Demo__some-network__share-button"
+                  >
+                    <TwitterIcon size={40} round />
+                  </TwitterShareButton>
+                </li>
+                <li>
+                  <WhatsappShareButton
+                    url="https://quiz-ea9c3.firebaseapp.com/"
+                    title="Estoy participando para desbloquear una de las siguientes recompensas, SÚMATE para que tú también seas uno de los afortunados ¡Es hora de juntarnos!"
+                    separator=":: "
+                    className="Demo__some-network__share-button"
+                  >
+                    <WhatsappIcon size={40} round />
+                  </WhatsappShareButton>
                 </li>
               </ul>
             </section>

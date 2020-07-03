@@ -10,7 +10,7 @@ function Score() {
     const unususbscribe = db
       .collection("score")
       .orderBy("correctAnswers", "desc")
-      .limit(3)
+      .limit(5)
       .onSnapshot((snapshot) => {
         const score = [];
         snapshot.forEach((doc) => score.push({ ...doc.data(), id: doc.id }));
@@ -46,7 +46,6 @@ function Score() {
               </tr>
             ))}
           </tbody>
-          
         </table>
       </div>
     </div>

@@ -563,9 +563,7 @@ class Play extends Component {
               </div>
 
               <div className="button-container">
-                <button id="quit-button" onClick={this.handleButtonClick}>
-                  Salir
-                </button>
+                <button id="quit-button">Salir</button>
               </div>
             </div>
           </div>

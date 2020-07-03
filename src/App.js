@@ -7,12 +7,14 @@ import QuizSummary from "./components/QuizSummary";
 import Config from "./pages/Config";
 import Wheel from "./pages/Wheel";
 import Modal from "./components/Modal";
+import Rewards from "./components/Rewards";
 
 export default function App() {
   return (
     <Router>
       <Route path="/" exact component={Home} />
       <Route path="/play/instructions" exact component={QuizInstructions} />
+      <Route path="/rewards" exact component={Rewards} />
       <Route path="/play/quiz" exact component={Play} />
       <Route path="/play/quizSummary" exact component={QuizSummary} />
       <Route path="/config" exact component={Config} />

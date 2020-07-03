@@ -1,5 +1,365 @@
 [
   {
+    "name": "Es el dulce más conocido en esta ruta:",
+    "optionA": "Dulce de leche",
+    "optionB": "Dulce de oreja de mico",
+    "optionC": "Dulce de joloche",
+    "optionD": "Dulce Mamey",
+    "answer": "Dulce de joloche",
+    "categoria": 2
+  },
+  {
+    "name": "¿Dónde se elabora la exquisita longaniza enjamonada?",
+    "optionA": "Centro",
+    "optionB": "Jalpa de Méndez",
+    "optionC": "Teapa",
+    "optionD": "Nacajuca",
+    "answer": "Teapa",
+    "categoria": 2
+  },
+  {
+    "name": "Platillo típico de Tapijulapa, hecho a base de tortilla de totoposte, frijoles refritos, carne de res o cerdo:",
+    "optionA": "Pizza tabasqueña",
+    "optionB": "Tostada",
+    "optionC": "Pishul",
+    "optionD": "Sopes",
+    "answer": "Pishul",
+    "categoria": 2
+  },
+  {
+    "name": "Es un platillo típico con hoja de momo de la región de la sierra:",
+    "optionA": "Mojarra",
+    "optionB": "Mole",
+    "optionC": "Mone ",
+    "optionD": "Barbacoa",
+    "answer": "Mone ",
+    "categoria": 2
+  },
+  {
+    "name": "Nombre del caracol de río que se come en tamales y caldos:",
+    "optionA": "Tegogolo",
+    "optionB": "Camote",
+    "optionC": "Shote",
+    "optionD": "Molusco",
+    "answer": "Shote",
+    "categoria": 2
+  },
+  {
+    "name": "¿Cuál es el tipo de queso que todo Teapaneco conoce? ",
+    "optionA": "Provolone",
+    "optionB": "Poro",
+    "optionC": "Fresco",
+    "optionD": "Finas especias ",
+    "answer": "Poro",
+    "categoria": 2
+  },
+  {
+    "name": "Son parte de la gastronomía típica de la Ruta Sierra:",
+    "optionA": "Totoposte y plátanos fritos",
+    "optionB": "Pishul y mondongo",
+    "optionC": "Mone y pishul",
+    "optionD": "Pozole",
+    "answer": "Mone y pishul",
+    "categoria": 2
+  },
+  {
+    "name": "El marañón es una bebida típica del municipio de:",
+    "optionA": "Teapa",
+    "optionB": "Macuspana",
+    "optionC": "Jalapa",
+    "optionD": "Centro",
+    "answer": "Jalapa",
+    "categoria": 2
+  },
+  {
+    "name": "¿En qué localidad de Tacotalpa se cultivan los famosos hongos comestibles? ",
+    "optionA": "Oxolotán",
+    "optionB": "Mexiquito",
+    "optionC": "Xicoténcatl",
+    "optionD": "Chablé",
+    "answer": "Mexiquito",
+    "categoria": 2
+  },
+  {
+    "name": "Es una palma cuyo fruto comestible es de forma ovoide  y de gran consumo por los habitantes de Oxolotán: ",
+    "optionA": "Chapaya",
+    "optionB": "Hongo",
+    "optionC": "Momo",
+    "optionD": "Yuca",
+    "answer": "Chapaya",
+    "categoria": 2
+  },
+  {
+    "name": "Nombre de platillo típico tabasqueño elaborado en verde, lleva caracoles de arroyo cocidos con chipilín y plátano verde:",
+    "optionA": "Pushiane",
+    "optionB": "Mone",
+    "optionC": "Pishul",
+    "optionD": "Caldo de caracol",
+    "answer": "Pushiane",
+    "categoria": 2
+  },
+  {
+    "name": "Es el famoso pan que se elabora en el poblado de Oxolotán:",
+    "optionA": "Pan de camote",
+    "optionB": "Pan de muerto",
+    "optionC": "Pan de nata",
+    "optionD": "Pan de castaña",
+    "answer": "Pan de camote",
+    "categoria": 2
+  },
+  {
+    "name": "Tipo de tubérculo que se prepara en fritura y es muy conocida en el municipio de Tacotalpa:",
+    "optionA": "Malanga",
+    "optionB": "Chapaya",
+    "optionC": "Mone",
+    "optionD": "Yuca",
+    "answer": "Malanga",
+    "categoria": 2
+  },
+  {
+    "name": "Es el fruto comestible más famoso del municipio de Teapa: ",
+    "optionA": "Naranja",
+    "optionB": "Cacao",
+    "optionC": "Plátano",
+    "optionD": "Piña",
+    "answer": "Plátano",
+    "categoria": 2
+  },
+  {
+    "name": "Comunidad donde se produce la fritura de la malanga: ",
+    "optionA": "Cerro Blanco",
+    "optionB": "Cuviac",
+    "optionC": "Madrigal",
+    "optionD": "Cuitláhuac",
+    "answer": "Madrigal",
+    "categoria": 2
+  },
+  {
+    "name": "Restaurante famoso en Jalapa, donde se prepara la mejor marqueta de frijol criollo:",
+    "optionA": "Mi Lupita",
+    "optionB": "Manantial",
+    "optionC": "La Llamarada",
+    "optionD": "El Paso",
+    "answer": "Mi Lupita",
+    "categoria": 2
+  },
+  {
+    "name": "¿Dónde se ubican los Talleres artesanales-gastronómicos de dulces de Joloche y Camote? ",
+    "optionA": "Tacotalpa",
+    "optionB": "Jalapa",
+    "optionC": "Macuspana",
+    "optionD": "Teapa",
+    "answer": "Jalapa",
+    "categoria": 2
+  },
+  {
+    "name": "Producto prehispánico de origen maya elaborado de maíz, que en la actualidad distingue al municipio de Macuspana:",
+    "optionA": "Tortilla Gruesa",
+    "optionB": "Tortilla de maíz nuevo ",
+    "optionC": "Totoposte",
+    "optionD": "Tostada de coco",
+    "answer": "Totoposte",
+    "categoria": 2
+  },
+  {
+    "name": "¿Qué platillo de la fonda “La Popular” se volvió famoso en la comunidad San Juan el Alto en el municipio de Jalapa? ",
+    "optionA": "Caldo de pavo criollo con molleja ",
+    "optionB": "Chirmol",
+    "optionC": "Tacos Gobernador ",
+    "optionD": "Frijol con puerco",
+    "answer": "Caldo de pavo criollo con molleja",
+    "categoria": 2
+  },
+  {
+    "name": "¿Cuál fue el primer restaurante que elaboró y dio a conocer el famoso Pishul? ",
+    "optionA": "Kolemtium",
+    "optionB": "La Mariquita",
+    "optionC": "Kolem-ja´",
+    "optionD": "Tulipán",
+    "answer": "La Mariquita",
+    "categoria": 2
+  },
+  {
+    "name": "Icono histórico que representa el triunfo de los pobladores sobre los corsarios ingleses en el año 1677 y se ubica en el poblado de Astapa:",
+    "optionA": "Barco",
+    "optionB": "Cañón",
+    "optionC": "Monumento ",
+    "optionD": "Bandera",
+    "answer": "Cañón",
+    "categoria": 0
+  },
+  {
+    "name": "¿Cuál es el único pueblo mágico que se encuentra en la región de la Sierra?",
+    "optionA": "Tapotzingo",
+    "optionB": "Tapijulapa",
+    "optionC": "Taxco",
+    "optionD": "Mitla",
+    "answer": "Tapijulapa",
+    "categoria": 0
+  },
+  {
+    "name": "¿Dónde se encuentra la Casa Museo que perteneció al ex-gobernador Tomás Garrido Canabal?",
+    "optionA": "Villahermosa ",
+    "optionB": "Villa Luz",
+    "optionC": "Villa Tapijulapa",
+    "optionD": "Tacotalpa",
+    "answer": "Villa Luz",
+    "categoria": 0
+  },
+  {
+    "name": "Ex Convento que se ubica en el pintoresco pueblo de Oxolotán, fue fundado por Franciscanos en 1633 y que ahora se le denomina Museo de la Sierra:",
+    "optionA": "Ex Convento de San Marcos ",
+    "optionB": "Ex Convento de San Francisco de Asís ",
+    "optionC": "Ex Convento de Santo Domingo de Guzmán ",
+    "optionD": "Ex convento ",
+    "answer": "Ex Convento de Santo Domingo de Guzmán",
+    "categoria": 0
+  },
+  {
+    "name": "Nombra las etnias que habitan en la zona de la sierra:",
+    "optionA": "Zoques y Choles",
+    "optionB": "Tzeltal y Tzoltzil ",
+    "optionC": "Nahuas y Chontales ",
+    "optionD": "Mixteca y Zapoteca",
+    "answer": "Zoques y Choles",
+    "categoria": 0
+  },
+  {
+    "name": "¿Qué significa el nombre de Tapijulapa?",
+    "optionA": "Lugar entre dos aguas",
+    "optionB": "Lugar donde se rompen los cántaros ",
+    "optionC": "Lugar donde mejor alumbra el sol ",
+    "optionD": "Lugar de piedras",
+    "answer": "Lugar donde se rompen los cántaros",
+    "categoria": 0
+  },
+  {
+    "name": "¿En dónde se lleva a cabo la celebración de la Pesca de la Sardina Ciega?",
+    "optionA": "Villa Luz",
+    "optionB": "Puyacatengo",
+    "optionC": "Cascadas Agua Blanca ",
+    "optionD": "Tacotalpa",
+    "answer": "Villa Luz",
+    "categoria": 0
+  },
+  {
+    "name": "¿En qué año se inició el rescate de la imagen urbana de Tapijulapa para darle su antiguo esplendor?",
+    "optionA": "1979",
+    "optionB": "2010",
+    "optionC": "1863",
+    "optionD": "1975",
+    "answer": "1979",
+    "categoria": 0
+  },
+  {
+    "name": "¿Desde qué período fue usada la cueva de los Ancestros?",
+    "optionA": "Clásico tardío ",
+    "optionB": "Arcaico ",
+    "optionC": "Clásico temprano",
+    "optionD": "Preclásico medio",
+    "answer": "Clásico tardío",
+    "categoria": 0
+  },
+  {
+    "name": "¿Qué templos podemos visitar en el municipio de Teapa?",
+    "optionA": "Santo Domingo de Guzmán, San Antonio de Padua y Santiago Apóstol",
+    "optionB": "Tecomajiaca, Señor de Esquipulas y Santiago Apóstol ",
+    "optionC": "Sagrado Corazón de Jesús, Santiago Apóstol y Nuestra Señora de Guadalupe ",
+    "optionD": "Templo de Iglesia de Santa María Tonantzintla, Templo expiatorio del Santísimo y Santuario Guadalupano",
+    "answer": "Tecomajiaca, Señor de Esquipulas y Santiago Apóstol",
+    "categoria": 0
+  },
+  {
+    "name": "¿En qué fecha fue nombrada La Villa de Tapijulapa por parte de la Secretaría de Turismo como Pueblo Mágico de México?",
+    "optionA": "8 de junio de 2010",
+    "optionB": "10 de junio de 2009",
+    "optionC": "8 de julio de 2010",
+    "optionD": "18 de junio 2008",
+    "answer": "8 de junio de 2010",
+    "categoria": 0
+  },
+  {
+    "name": "¿En qué municipio se instaló por primera vez un ingenio azucarero que contaba con una máquina movida por vapor que data del año 1873?",
+    "optionA": "Tacotalpa",
+    "optionB": "Jalapa",
+    "optionC": "Macuspana",
+    "optionD": "Teapa",
+    "answer": "Jalapa",
+    "categoria": 0
+  },
+  {
+    "name": "Es el único museo que se encuentra en el municipio de Jalapa:",
+    "optionA": "Museo del Joloche",
+    "optionB": "Museo del artesano",
+    "optionC": "Museo del Dulce",
+    "optionD": "Museo del Jabón",
+    "answer": "Museo del Dulce",
+    "categoria": 0
+  },
+  {
+    "name": "¿Cuál es el principal atractivo turístico de la Gruta Cuesta Chica? ",
+    "optionA": "Categoría nivel 3 para espeleismo y 750 mts de progresión para actividades",
+    "optionB": "Importantes vestigios mayas como una máscara y pieza policromada",
+    "optionC": "Asentamientos de agua ",
+    "optionD": "Ciclismo y Rappel",
+    "answer": "Categoría nivel 3 para espeleismo y 750 mts de progresión para actividades",
+    "categoria": 0
+  },
+  {
+    "name": "Pueblo pintoresco que se localiza a 96 km de la ciudad de Villahermosa cuyo nombre significa “Casa del Ocelote” ",
+    "optionA": "Oxolotán",
+    "optionB": "Puyil",
+    "optionC": "Puxcatán",
+    "optionD": "Tapijulapa",
+    "answer": "Oxolotán",
+    "categoria": 0
+  },
+  {
+    "name": "Nombre del Templo que se encuentra en el pueblo mágico de Tapijulapa, su construcción data del siglo XVII:",
+    "optionA": "Templo de Santo Domingo ",
+    "optionB": "Templo de Sagrado Corazón ",
+    "optionC": "Templo de Santiago Apóstol",
+    "optionD": "Templo de la Resurrección",
+    "answer": "Templo de Santiago Apóstol",
+    "categoria": 0
+  },
+  {
+    "name": "Nombre prehispánico del poblado de Astapa:",
+    "optionA": "Xal-apan",
+    "optionB": "Zagoastapán",
+    "optionC": "Amatán",
+    "optionD": "Zagastapa",
+    "answer": "Zagoastapán",
+    "categoria": 0
+  },
+  {
+    "name": "¿En qué siglo comenzó Tabasco a producir plátano?",
+    "optionA": "Siglo XIX",
+    "optionB": "Siglo XX",
+    "optionC": "Siglo IV",
+    "optionD": "Siglo XV",
+    "answer": "Siglo XIX",
+    "categoria": 0
+  },
+  {
+    "name": " ¿En qué año fue nombrada Tapijulapa la cabecera municipal de Tacotalpa? ",
+    "optionA": "1934 ",
+    "optionB": "1432 ",
+    "optionC": "1645 ",
+    "optionD": "1935 ",
+    "answer": "1934 ",
+    "categoria": 0
+  },
+  {
+    "name": "¿A partir de qué pueblos zoques surge la comunidad de Teapa?",
+    "optionA": "Tecomaxiacan y Teapan",
+    "optionB": "Balboa y Villa de Santiago",
+    "optionC": "Santiago de Teapa y Santa Ana",
+    "optionD": "Tapalapa y Amatán",
+    "answer": "Tecomaxiacan y Teapan",
+    "categoria": 0
+  },
+  {
     "name": "¿Qué actividades puedes realizar en la Ruta de Aventura en la Sierra?",
     "optionA": "Equitación y esquí",
     "optionB": "Rappel, descenso en río y espeleísmo",
@@ -90,8 +450,8 @@
     "categoria": 3
   },
   {
-    "name": "Es famosa por que cuenta con uno de los micro-ecosistemas más singulares del planeta",
-    "optionA": "Tunel de los Tintales",
+    "name": "Es famosa por que cuenta con uno de los micro-ecosistemas más singulares del planeta:",
+    "optionA": "Túnel de los Tintales",
     "optionB": "La Cueva de la Sardina Ciega",
     "optionC": "Túnel Natural Chinín",
     "optionD": "Cerro El Cuyo",
@@ -100,15 +460,15 @@
   },
   {
     "name": "¿Cuál es el nombre del famoso cerro por sus vestigios arqueológicos que se ubica en el municipio de Macuspana?",
-    "optionA": "Cerro el Tortuguero",
-    "optionB": "Cerro el Madrigal",
-    "optionC": "Cerro de la Sierra",
-    "optionD": "Cerro el Cuyo",
-    "answer": "Cerro el Tortuguero",
+    "optionA": "El Tortuguero",
+    "optionB": "E Madrigal",
+    "optionC": "De la Sierra",
+    "optionD": "El Cuyo",
+    "answer": "El Tortuguero",
     "categoria": 3
   },
   {
-    "name": "En qué localidad del municipio de Jalapa se ubican plantaciones de Camote",
+    "name": "¿En qué localidad del municipio de Jalapa se ubican plantaciones de Camote?",
     "optionA": "Tequila",
     "optionB": "Jahuacapa",
     "optionC": "Astapa",
@@ -117,7 +477,7 @@
     "categoria": 3
   },
   {
-    "name": "Es el balneario más famoso en Teapa cuenta con albercas y chapoteaderos naturales de aguas termales sulfurosas con propiedades curativas",
+    "name": "Es el balneario más famoso en Teapa, cuenta con albercas y chapoteaderos naturales de aguas termales sulfurosas con propiedades curativas:",
     "optionA": "Puyacatengo",
     "optionB": "Hacienda los azufres",
     "optionC": "Las Garzas",
@@ -126,7 +486,7 @@
     "categoria": 3
   },
   {
-    "name": "Son espectaculares cavernas repletas de perlas, que son pequeñas esferas de pisolitas hechas de capas de calcita y se encuentran en el municipio de Teapa",
+    "name": "Son espectaculares cavernas repletas de perlas, que son pequeñas esferas de pisolitas hechas de capas de calcita y se encuentran en el municipio de Teapa:",
     "optionA": "Gruta de los Mayas",
     "optionB": "Gruta de las canicas",
     "optionC": "Grutas de Coconá",
@@ -135,16 +495,16 @@
     "categoria": 3
   },
   {
-    "name": "Fue decretada área protegida el 19 de diciembre de 1987 por su vegetación selva alta y mediana perennifolia se ubica en el municipio de Macuspana",
+    "name": "Fue decretada Área Natural Protegida el 19 de diciembre de 1987 por su vegetación selva alta y mediana perennifolia se ubica en el municipio de Macuspana:",
     "optionA": "Cascadas de Villa Luz",
-    "optionB": "ANP Cascadas de Agua Blanca",
+    "optionB": "Cascadas de Agua Blanca",
     "optionC": "Monumento Natural Grutas Coconá",
     "optionD": "Pueblo Mágico de Tapijulapa",
-    "answer": "ANP Cascadas de Agua Blanca",
+    "answer": "Cascadas de Agua Blanca",
     "categoria": 3
   },
   {
-    "name": "Poblado indígena de Tacotalpa que su nombre en lengua Cho´l significa “Trampa de lechuzas” donde se encuentran murales choles.",
+    "name": "Poblado indígena de Tacotalpa que su nombre en lengua Cho´l significa “Trampa de lechuzas” donde se encuentran murales choles:",
     "optionA": "Cuviac",
     "optionB": "Caverna de Ixta Ha",
     "optionC": "Grutas de Coconá",
@@ -162,43 +522,43 @@
     "categoria": 3
   },
   {
-    "name": "Estos son algunos de los sitios de interés turísticos que podemos encontrar en el municipio de Teapa",
-    "optionA": "Balnearios naturales sobre la Ribera del Puyacatengo, Cueva de las Canicas y (ANP) Grutas de Coconá",
+    "name": "Estos son algunos de los sitios de interés turísticos que podemos encontrar en el municipio de Teapa:",
+    "optionA": "Balnearios naturales sobre la Ribera del Puyacatengo, Cueva de las Canicas y Grutas de Coconá",
     "optionB": "Túnel natural de los Tintales, Río de la Sierra y Quinta botánica María Margarita",
-    "optionC": "Poblado Tomas Garrido, Cañón almandros, ANP Yu-Balcah y Talleres artesanales mimbre",
+    "optionC": "Poblado Tomás Garrido, Cañón Almendros, ANP Yu-Balcah y Talleres artesanales mimbre",
     "optionD": "Pueblo Mágico de Tapijulapa, Cueva de las sardinas, Ex-convento de los Franciscanos",
-    "answer": "Balnearios naturales sobre la Ribera del Puyacatengo, Cueva de las Canicas y (ANP) Grutas de Coconá",
+    "answer": "Balnearios naturales sobre la Ribera del Puyacatengo, Cueva de las Canicas y Grutas de Coconá",
     "categoria": 3
   },
   {
-    "name": "La Quinta Gerita se localiza en el municipio de Macuspana se realizan recorridos de agroturismo y cuentan con cultivos de una fruta tropical:",
+    "name": "La Quinta Gerita se localiza en el municipio de Macuspana; se realizan recorridos de agroturismo y cuentan con cultivos de una fruta tropical:",
     "optionA": "Manzana",
     "optionB": "Maracuyá",
     "optionC": "Pera",
-    "optionD": "Platano",
+    "optionD": "Plátano",
     "answer": "Maracuyá",
     "categoria": 3
   },
   {
-    "name": "Se encuentra Rodeada de un escenario natural donde ofrece diferentes servicios y desayunos típicos del municipio de Teapa",
-    "optionA": "Mirador-Parador Turístico La tiendita VNV",
+    "name": "Se encuentra rodeada de un escenario natural donde ofrece diferentes servicios y desayunos típicos del municipio de Teapa:",
+    "optionA": "Mirador-Parador Turístico La Tiendita ",
     "optionB": "Rancho Las Lilias: Centro Experimental Agrícola",
     "optionC": "Bellavista",
     "optionD": "Villa Luz",
-    "answer": "Mirador-Parador Turístico La tiendita VNV",
+    "answer": "Mirador-Parador Turístico La Tiendita",
     "categoria": 3
   },
   {
-    "name": "Producto pecuario y crianza de especies menores de granja se encuentra en el municipio de Jalapa",
+    "name": "Producto pecuario y crianza de especies menores de granja se encuentra en el municipio de Jalapa:",
     "optionA": "Granja Didáctica Pony Ranch",
     "optionB": "Rancho Ganadero el Rosario",
     "optionC": "Quinta las Guacamayas",
-    "optionD": "La Granja de la SIerra",
+    "optionD": "La Granja de la Sierra",
     "answer": "Granja Didáctica Pony Ranch",
     "categoria": 3
   },
   {
-    "name": "¿Qué tipo de actividad podemos realizar en el ANP Parque Estatal Agua blanca?",
+    "name": "¿Qué tipo de actividad podemos realizar en el ANP Parque Estatal Agua Blanca?",
     "optionA": "Espeleismo, Observación de aves y Rappel",
     "optionB": "Paseos en Lancha",
     "optionC": "Paracaidismo y descenso en río",
@@ -225,7 +585,7 @@
     "categoria": 1
   },
   {
-    "name": "Es una de las tradiciones dedicadas a los fieles difuntos durante todo el mes de noviembre en el municipio de Jalapa",
+    "name": "Es una de las tradiciones dedicadas a los fieles difuntos durante todo el mes de noviembre en el municipio de Jalapa:",
     "optionA": "Fieles difuntos",
     "optionB": "Las Tamaladas",
     "optionC": "La Dulceada",
@@ -234,16 +594,16 @@
     "categoria": 1
   },
   {
-    "name": "¿En qué poblado de Tacotalpa se lleva a cabo la Danza prehispánica en honor al Señor del Trueno?",
+    "name": "¿En qué poblado de Tacotalpa se lleva a cabo la Danza prehispánica en honor al Señor del Trueno? ",
     "optionA": "Oxolotan",
     "optionB": "Cuitláhuac",
-    "optionC": "Puxcatan",
+    "optionC": "Puxcatán",
     "optionD": "Tapijulapa",
-    "answer": "Puxcatan",
+    "answer": "Puxcatán",
     "categoria": 1
   },
   {
-    "name": "Es un poblado que se localiza en Tacotalpa, donde hace más de 130 años nació la tradición étnica chol del Lavado de Ropa de los Santos ",
+    "name": "Es un poblado que se localiza en Tacotalpa, donde hace más de 130 años nació la tradición étnica chol del 'Lavado de Ropa de los Santos'",
     "optionA": "Oxolotán",
     "optionB": "Xicoténcatl",
     "optionC": "Puxcatan",
@@ -252,7 +612,7 @@
     "categoria": 1
   },
   {
-    "name": "Es un símbolo y orgullo de Teapa en ella se puede observar un ovalo dentro del cual se encuentra una imagen de la Virgen de Guadalupe y agua saliendo por dos cántaros",
+    "name": "Es un símbolo y orgullo de Teapa en ella se puede observar un óvalo dentro del cual se encuentra una imagen de la Virgen de Guadalupe y agua saliendo por dos cántaros:",
     "optionA": "Fuente Natural el Mure",
     "optionB": "Fuente de los Sapos",
     "optionC": "Cascada Agua blanca",
@@ -261,7 +621,7 @@
     "categoria": 1
   },
   {
-    "name": "Ritual que se lleva a cabo en agradecimiento a la madre tierra por seguir abasteciendo a la comunidad Cho´l. Cuviac se localiza en Tacotalpa",
+    "name": "Ritual que se lleva a cabo en agradecimiento a la madre tierra por seguir abasteciendo a la comunidad Cho´l. Cuviac se localiza en Tacotalpa:",
     "optionA": "Tradicional ritual de Petición de Promesa del Ojo de Agua",
     "optionB": "Trampa de Lechuzas",
     "optionC": "La danza de los ancestros",
@@ -270,7 +630,7 @@
     "categoria": 1
   },
   {
-    "name": "En qué localidad dice la leyenda que cuando una persona muere por mal de ojo en la noche de su entierro los brujos se lo comen en una gran fiesta convertidos en animales.",
+    "name": "¿En qué localidad dice la leyenda que cuando una persona muere por mal de ojo en la noche de su entierro los brujos se lo comen en una gran fiesta convertidos en animales?",
     "optionA": "Tacotalpa",
     "optionB": "Jalapa",
     "optionC": "Macuspana",
@@ -279,43 +639,43 @@
     "categoria": 1
   },
   {
-    "name": "En lo más profundo de esta cueva existe un misterioso cementerio, en su interior, se encuentran depositados restos humanos entre otras joyas arqueológicas se localiza en el poblado Puxcatán en el municipio de Tacotalpa.",
+    "name": "En lo más profundo de esta cueva existe un misterioso cementerio, en su interior, se encuentran depositados restos humanos entre otras joyas arqueológicas se localiza en el poblado Puxcatán en el municipio de Tacotalpa:",
     "optionA": "Cueva de los Ancestros",
-    "optionB": "Cueva de las sardinas",
-    "optionC": "Cueva de los difuntos",
+    "optionB": "Cueva de las Sardinas",
+    "optionC": "Cueva de los Difuntos",
     "optionD": "Cueva del Ahullador",
     "answer": "Cueva de los Ancestros",
     "categoria": 1
   },
   {
     "name": "A la Capital Zoque ciudad de Teapa tradicionalmente también se le conoce con el nombre de:",
-    "optionA": "La sultana de la Sierra",
+    "optionA": "La Sultana de la Sierra",
     "optionB": "El Corazón de Tabasco",
     "optionC": "La Esmeralda del Sureste",
     "optionD": "El lugar donde se rompen cantaros",
-    "answer": "La sultana de la Sierra",
+    "answer": "La Sultana de la Sierra",
     "categoria": 1
   },
   {
-    "name": "¿Fecha de menos calor en Tabasco donde se realiza las fiestas tradicionales del señor de Esquipulas?",
-    "optionA": "43954",
-    "optionB": "43845",
-    "optionC": "44176",
-    "optionD": "44013",
-    "answer": "43845",
+    "name": "¿Fecha en que se realizan las fiestas tradicionales del señor de Esquipulas?",
+    "optionA": "03 de mayo",
+    "optionB": "15 de enero",
+    "optionC": "11 de diciembre ",
+    "optionD": "01 de julio",
+    "answer": "15 de enero",
     "categoria": 1
   },
   {
-    "name": "¿En choco como se les denomina a las personas originarias de Macuspana?",
+    "name": "¿Cómo les dicen los oriundos de Macuspana?",
     "optionA": "Tumba Patos",
-    "optionB": "Caras Palidas",
+    "optionB": "Caras Pálidas",
     "optionC": "Come piedras",
     "optionD": "Patastes",
     "answer": "Tumba Patos",
     "categoria": 1
   },
   {
-    "name": "¿En choco como se les denomina a las personas originarias de Tacotalpa?",
+    "name": "¿Cómo se les denomina a las personas originarias de Tacotalpa?",
     "optionA": "Caras pálidas",
     "optionB": "Come Piedras",
     "optionC": "Tumba Patos",
@@ -324,7 +684,7 @@
     "categoria": 1
   },
   {
-    "name": "¿En choco como se les denomina a las personas originarias de Teapa?",
+    "name": "¿En choco, cómo se les denomina a las personas originarias de Teapa?",
     "optionA": "Envoltorio sucio",
     "optionB": "Patastes",
     "optionC": "Come piedra",
@@ -333,7 +693,7 @@
     "categoria": 1
   },
   {
-    "name": "¿En choco como se les denomina a las personas originarias de Jalapa?",
+    "name": "¿Cómo se refieren a las personas que nacieron en Jalapa? ",
     "optionA": "Jala palo con garabato",
     "optionB": "Tumba patos",
     "optionC": "Caras pálidas",
@@ -342,7 +702,7 @@
     "categoria": 1
   },
   {
-    "name": "Es una tradición indígena heredada por los antiguos (mayas), ritual en honor a Chac Dios de la lluvia en Villa Luz en el municipio de Tacotalpa",
+    "name": "Es una tradición indígena heredada por los antiguos, ritual en honor a 'Chac Dios de la lluvia' en Villa Luz en el municipio de Tacotalpa:",
     "optionA": "Tradicional ritual de Petición",
     "optionB": "La pesca de la Sardina Ciega",
     "optionC": "La Danza de la Lluvia",
@@ -351,7 +711,7 @@
     "categoria": 1
   },
   {
-    "name": "¿El nombre del municipio de Macuspana en el vocablo náhuatl que significa?",
+    "name": "El nombre del municipio de Macuspana en el vocablo náhuatl significa:",
     "optionA": "Lugar de las Cinco Barreduras o Limpiezas",
     "optionB": "Tierra de breñas o malezas",
     "optionC": "Agua Honda",
@@ -360,16 +720,16 @@
     "categoria": 1
   },
   {
-    "name": "¿El nombre del municipio de Tacotalpa en el vocablo náhuatl que significa?",
-    "optionA": "El Caudillo del Sur",
-    "optionB": "Tierra de Breñas o Malezas",
-    "optionC": "Caras Palidas",
-    "optionD": "Lugar de las Cinco Barreduras o Limpiezas",
-    "answer": "Tierra de Breñas o Malezas",
+    "name": "Tacotalpa significa en náhuatl: ",
+    "optionA": "El Caudillo del Sur ",
+    "optionB": "Tierra de breñas o malezas",
+    "optionC": "Caras pálidas ",
+    "optionD": "Lugar de las cinco barreduras o limpiezas",
+    "answer": "Tierra de breñas o malezas",
     "categoria": 1
   },
   {
-    "name": "¿El nombre del municipio de Teapa en el vocablo zoque que significa?",
+    "name": "En vocablo zoque, Teapa significa: ",
     "optionA": "Lugar sobre arena",
     "optionB": "Agua Honda",
     "optionC": "El Caudillo del Sur",
@@ -378,7 +738,7 @@
     "categoria": 1
   },
   {
-    "name": "¿El nombre del municipio de Jalapa en el vocablo náhuatl que significa?",
+    "name": "¿El nombre del municipio de Jalapa en el vocablo náhuatl, qué significa?",
     "optionA": "Ribera de Arena",
     "optionB": "Lugar sobre arena",
     "optionC": "Lugar del cacique principal",
@@ -405,7 +765,7 @@
     "categoria": 4
   },
   {
-    "name": "¿Qué ríos mayas surcan el municipio de Teapa?",
+    "name": "¿Qué ríos mayas surcan el municipio de Teapa? ",
     "optionA": "Usumacinta y San Pedro",
     "optionB": "Amatán y Oxolotán",
     "optionC": "Usumacinta y Amatán",
@@ -414,7 +774,7 @@
     "categoria": 4
   },
   {
-    "name": "¿Qué municipio de la Ruta Aventura en la Sierra fue capital de Tabasco?",
+    "name": "¿Qué ciudad de la Ruta Aventura en la Sierra fue capital de Tabasco?",
     "optionA": "Macuspana",
     "optionB": "Jalapa",
     "optionC": "Teapa",
@@ -450,7 +810,7 @@
     "categoria": 4
   },
   {
-    "name": "Cuando fue descifrada adquirió mayor relevancia por ser la Estela que predecía “El Fin de los Tiempos del Mundo Maya”",
+    "name": "Cuando fue descifrada adquirió mayor relevancia por ser la Estela que predecía “El Fin de los Tiempos del Mundo Maya”:",
     "optionA": "Estela 4",
     "optionB": "Estela 6",
     "optionC": "Estela 10",
@@ -460,15 +820,15 @@
   },
   {
     "name": "¿En qué localidad se ubican los Talleres artesanales de tallado en madera y elaboración de Jabón de Corozo?",
-    "optionA": "Tepetitán, Macuspana",
-    "optionB": "Astapa, Jalapa",
-    "optionC": "Belen, Teapa",
-    "optionD": "Tapijulapa, Tacotalpa",
-    "answer": "Astapa, Jalapa",
+    "optionA": "Tepetitán",
+    "optionB": "Astapa",
+    "optionC": "Belén",
+    "optionD": "Tapijulapa",
+    "answer": "Astapa",
     "categoria": 4
   },
   {
-    "name": "¿En qué famosa gruta se encuentra un cenote con más 35 mts de profundidad?",
+    "name": "¿En qué famosa gruta se encuentra un cenote con más 35 metros de profundidad?",
     "optionA": "Gruta de Coconá",
     "optionB": "Gruta Ixta-ha",
     "optionC": "Gruta Poaná",
@@ -477,7 +837,7 @@
     "categoria": 4
   },
   {
-    "name": "¿Dónde se encuentra las Ruinas del Ex convento Fray Raymundo de Poposá que se fundó en el año 1863?",
+    "name": "¿Dónde se encuentran los vestigios del Ex convento Fray Raymundo de Poposá que se fundó en el año 1863?",
     "optionA": "Macuspana",
     "optionB": "Jalapa",
     "optionC": "Teapa",
@@ -495,7 +855,7 @@
     "categoria": 4
   },
   {
-    "name": "¿Cómo se le llama al río maya que pasa por Jalapa?",
+    "name": "¿Cómo se le llama al río maya que pasa por Jalapa? ",
     "optionA": "Tacotalpa",
     "optionB": "Chinal",
     "optionC": "Amatán",
@@ -543,9 +903,9 @@
     "name": "Famoso balneario con hermosas cascadas y pozas naturales en el municipio de Macuspana",
     "optionA": "Cascadas de Villa Luz",
     "optionB": "Agua Selva",
-    "optionC": "Cascada Azúl",
-    "optionD": "Cascadas De Agua Blanca",
-    "answer": "Cascadas De Agua Blanca",
+    "optionC": "Cascada Azul",
+    "optionD": "Cascadas de Agua Blanca",
+    "answer": "Cascadas de Agua Blanca",
     "categoria": 4
   },
   {
@@ -565,365 +925,5 @@
     "optionD": "Tacotalpa",
     "answer": "Jalapa",
     "categoria": 4
-  },
-  {
-    "name": "Icono histórico que representa el triunfo de los pobladores sobre los corsarios ingleses en el año 1677 y se ubica en el poblado de Astapa:",
-    "optionA": "Barco",
-    "optionB": "Cañón",
-    "optionC": "Monumento",
-    "optionD": "Bandera",
-    "answer": "Cañón",
-    "categoria": 0
-  },
-  {
-    "name": "¿Cuál es el único pueblo mágico que se encuentra en la región de la Sierra?",
-    "optionA": "Tapotzingo",
-    "optionB": "Tapijulapa",
-    "optionC": "Taxco",
-    "optionD": "Mitla",
-    "answer": "Tapijulapa",
-    "categoria": 0
-  },
-  {
-    "name": "¿Dónde se encuentra la casa museo que perteneció al ex-gobernador Tomás Garrido Canabal?",
-    "optionA": "Villahermosa",
-    "optionB": "Villa Luz",
-    "optionC": "Villa Tapijulapa",
-    "optionD": "Tacotalpa",
-    "answer": "Villa Luz",
-    "categoria": 0
-  },
-  {
-    "name": "Ex Convento que se ubica en el pintoresco pueblo de Oxolotán fue fundado por Franciscanos en 1633 y que ahora se le denomina museo de la Sierra:",
-    "optionA": "Ex Convento de San Marcos",
-    "optionB": "Ex Convento de San Francisco de Asís",
-    "optionC": "Ex Convento de Santo Domingo de Guzmán",
-    "optionD": "Ex convento de Nuestra Señora de Guadalupe",
-    "answer": "Ex Convento de Santo Domingo de Guzmán",
-    "categoria": 0
-  },
-  {
-    "name": "Nombra las etnias que habitan en la zona de la sierra:",
-    "optionA": "Zoques y Choles",
-    "optionB": "Tzeltal y Tzoltzil",
-    "optionC": "Nahuas y Chontales",
-    "optionD": "Mizteca y Zapoteca",
-    "answer": "Zoques y Choles",
-    "categoria": 0
-  },
-  {
-    "name": "¿Qué significa el nombre de Tapijulapa?",
-    "optionA": "Lugar entre dos aguas",
-    "optionB": "Lugar donde se rompen los cántaros",
-    "optionC": "Lugar donde mejor alumbra el sol",
-    "optionD": "Lugar de piedras",
-    "answer": "Lugar donde se rompen los cántaros",
-    "categoria": 0
-  },
-  {
-    "name": "¿En dónde se lleva a cabo la celebración de la Pesca de la Sardina Ciega?",
-    "optionA": "Parque Temático Balneario de Villa Luz",
-    "optionB": "Puyacatengo",
-    "optionC": "Cascadas Agua Blanca ",
-    "optionD": "Tacotalpa",
-    "answer": "Parque Temático Balneario de Villa Luz",
-    "categoria": 0
-  },
-  {
-    "name": "En qué año el gobierno del estado de Tabasco inicia con el rescate de la imagen urbana de Tapijulapa para darle su antiguo esplendor",
-    "optionA": "1979",
-    "optionB": "2010",
-    "optionC": "1863",
-    "optionD": "1975",
-    "answer": "1979",
-    "categoria": 0
-  },
-  {
-    "name": "¿Desde qué periodo fue usada la cueva de los Ancestros?",
-    "optionA": "Clásico tardío (650 a 900 d.C.)",
-    "optionB": "Arcaico (8000 a 2500 a.C.)",
-    "optionC": "Clásico temprano",
-    "optionD": "Clasico tardío (800 a 900 a. C)",
-    "answer": "Clásico tardío (650 a 900 d.C.)",
-    "categoria": 0
-  },
-  {
-    "name": "¿Qué templos podemos visitar en el municipio de Teapa?",
-    "optionA": "Santo Domingo de Guzmán, San Antonio de Padua y Santiago Apóstol",
-    "optionB": "Tecomajiaca, Señor de Esquipulas y Santiago Apóstol",
-    "optionC": "Sagrado Corazón de Jesús, Santiago Apóstol y Nuestra Señora de Guadalupe",
-    "optionD": "Templo de Iglesia de Santa María Tonantzintla, Templo expiatorio del Santísimo y Santuario Guadalupano",
-    "answer": "Tecomajiaca, Señor de Esquipulas y Santiago Apóstol",
-    "categoria": 0
-  },
-  {
-    "name": "¿En qué fecha fue nombrado La Villa de Tapijulapa por parte de la Secretaria de Turismo Pueblos Mágicos de México?",
-    "optionA": "8 de junio de 2010",
-    "optionB": "10 de junio de 2009",
-    "optionC": "8 de julio de 2010",
-    "optionD": "18 de junio 2008",
-    "answer": "8 de junio de 2010",
-    "categoria": 0
-  },
-  {
-    "name": "En que municipio se instaló por primera vez un ingenio azucarero que contaba con una maquina movida por vapor que data del año 1873",
-    "optionA": "Tacotalpa",
-    "optionB": "Jalapa",
-    "optionC": "Macuspana",
-    "optionD": "Teapa",
-    "answer": "Jalapa",
-    "categoria": 0
-  },
-  {
-    "name": "Es el único museo que se encuentra en el municipio de Jalapa",
-    "optionA": "Museo del Joloche",
-    "optionB": "Museo del artesano",
-    "optionC": "Museo del Dulce",
-    "optionD": "Museo del Jabón",
-    "answer": "Museo del Dulce",
-    "categoria": 0
-  },
-  {
-    "name": "Cual es el principal atractivo turístico de la Gruta Cuesta Chica",
-    "optionA": "Categoría nivel 3 para espeleismo y 750 mts de progresión para actividades",
-    "optionB": "Importantes vestigios mayas como una máscara y pieza policromada",
-    "optionC": "Asentamientos de agua",
-    "optionD": "Ciclismo y Rappel",
-    "answer": "Categoría nivel 3 para espeleismo y 750 mts de progresión para actividades",
-    "categoria": 0
-  },
-  {
-    "name": "Pueblo pintoresco que se localiza a 96 km de la ciudad de Villahermosa cuyo nombre significa “Casa del Ocelote” ",
-    "optionA": "Oxolotán",
-    "optionB": "Puyil",
-    "optionC": "Puxcatán",
-    "optionD": "Tapijulapa",
-    "answer": "Oxolotán",
-    "categoria": 0
-  },
-  {
-    "name": "¿Nombre del Templo que se encuentra en el pueblo mágico de Tapijulapa su construcción data del siglo XVII?",
-    "optionA": "Templo de Santo Domingo",
-    "optionB": "Templo de Sagrado Corazón",
-    "optionC": "Templo de Santiago Apóstol",
-    "optionD": "Templo de la Resurreción",
-    "answer": "Templo de Santiago Apóstol",
-    "categoria": 0
-  },
-  {
-    "name": "Nombre Prehispánico del poblado de Astapa",
-    "optionA": "Xal-apan",
-    "optionB": "Zagoastapán",
-    "optionC": "Amatán",
-    "optionD": "Zagastapa",
-    "answer": "Zagoastapán",
-    "categoria": 0
-  },
-  {
-    "name": "Tabasco es reconocido como el campeón de producción de plátanos en México a partir de qué fecha se comenzó con la producción en la entidad ",
-    "optionA": "Siglo XIX",
-    "optionB": "Siglo XX",
-    "optionC": "Siglo IV",
-    "optionD": "Siglo XV",
-    "answer": "Siglo XIX",
-    "categoria": 0
-  },
-  {
-    "name": "¿En qué fecha fue nombrada Tapijulapa la cabecera municipal de Tacotalpa?",
-    "optionA": "1934 a 1936",
-    "optionB": "1432 a 1434",
-    "optionC": "1645 a 1650",
-    "optionD": "1935 a 1936",
-    "answer": "1934 a 1936",
-    "categoria": 0
-  },
-  {
-    "name": "¿A partir de que pueblos zoques surge la comunidad de Teapa?",
-    "optionA": "Tecomaxiacan y Teapan",
-    "optionB": "Balboa y Villa de Santiago",
-    "optionC": "Santiago de Teapa y Santa Ana",
-    "optionD": "Tapalapa y Amatán",
-    "answer": "Tecomaxiacan y Teapan",
-    "categoria": 0
-  },
-  {
-    "name": "¿El dulce más conocido en esta ruta?",
-    "optionA": "Dulce de leche",
-    "optionB": "Dulce de oreja de mico",
-    "optionC": "Pasta de camote de frutas envuelto en joloche",
-    "optionD": "Dulce Mamey",
-    "answer": "Pasta de camote de frutas envuelto en joloche",
-    "categoria": 2
-  },
-  {
-    "name": "¿Dónde se elabora la exquisita longaniza enjamonada?",
-    "optionA": "Centro",
-    "optionB": "Jalpa de Méndez",
-    "optionC": "Teapa",
-    "optionD": "Nacajuca",
-    "answer": "Teapa",
-    "categoria": 2
-  },
-  {
-    "name": "Platillo típico de Tapijulapa, hecho a base de tortilla de totoposte, frijoles refritos, carne de res o cerdo",
-    "optionA": "Pizza tabasqueña",
-    "optionB": "Tostada",
-    "optionC": "Pishul",
-    "optionD": "Sopes",
-    "answer": "Pishul",
-    "categoria": 2
-  },
-  {
-    "name": "Es un platillo típico con hoja de momo de la región de la sierra:",
-    "optionA": "Mojarra",
-    "optionB": "Mole",
-    "optionC": "Mone",
-    "optionD": "Barbacoa",
-    "answer": "Mone",
-    "categoria": 2
-  },
-  {
-    "name": "Nombre del caracol de río que se come en tamales y caldos:",
-    "optionA": "Tegogolo",
-    "optionB": "Camote",
-    "optionC": "Shote",
-    "optionD": "Molusco",
-    "answer": "Shote",
-    "categoria": 2
-  },
-  {
-    "name": "Cual es el tipo de queso que todo Teapaneco conoce?",
-    "optionA": "Ahumado",
-    "optionB": "Prensado tipo poro",
-    "optionC": "Provole",
-    "optionD": "Finas especies",
-    "answer": "Prensado tipo poro",
-    "categoria": 2
-  },
-  {
-    "name": "Son parte de la gastronomía típica de la ruta Sierra:",
-    "optionA": "Totoposte y plátanos fritos",
-    "optionB": "Pishul y mondongo",
-    "optionC": "Mone y pishul",
-    "optionD": "Pozole",
-    "answer": "Mone y pishul",
-    "categoria": 2
-  },
-  {
-    "name": "El marañón es una bebida típica del municipio de",
-    "optionA": "Teapa",
-    "optionB": "Macuspana",
-    "optionC": "Jalapa",
-    "optionD": "Centro",
-    "answer": "Jalapa",
-    "categoria": 2
-  },
-  {
-    "name": "En qué localidad de Tacotalpa se cultivan los famosos hongos comestibles ",
-    "optionA": "Oxolotán",
-    "optionB": "Mexiquito",
-    "optionC": "Xicoténcat",
-    "optionD": "Chablé",
-    "answer": "Mexiquito",
-    "categoria": 2
-  },
-  {
-    "name": "Es una Palma de la familia de las arecáceas, de fruto comestible de forma ovoide de gran consumo por los habitantes de Oxolotán",
-    "optionA": "Chapaya",
-    "optionB": "Hongo",
-    "optionC": "Momo",
-    "optionD": "Yuca",
-    "answer": "Chapaya",
-    "categoria": 2
-  },
-  {
-    "name": "Nombre de platillo típico tabasqueño elaborado en verde lleva caracoles de arroyo cocidos con chipilín y plátanos verdes",
-    "optionA": "Pushiane",
-    "optionB": "Mone",
-    "optionC": "Pishul",
-    "optionD": "Caldo caracol",
-    "answer": "Pushiane",
-    "categoria": 2
-  },
-  {
-    "name": "Es el famoso pan que se elabora en el poblado de Oxolotán",
-    "optionA": "Pan de Camote",
-    "optionB": "Pan de muerto",
-    "optionC": "Pan de Nata",
-    "optionD": "Pan de castaña",
-    "answer": "Pan de Camote",
-    "categoria": 2
-  },
-  {
-    "name": "Es una raíz tipo de tubérculo comestible que se prepara en fritura y es muy conocida en el municipio de Tacotalpa",
-    "optionA": "Malanga",
-    "optionB": "Chapaya",
-    "optionC": "Mone",
-    "optionD": "Yuca",
-    "answer": "Malanga",
-    "categoria": 2
-  },
-  {
-    "name": "Es el fruto comestible más famoso del municipio de Teapa",
-    "optionA": "Plátano Valery",
-    "optionB": "Plátano Macho",
-    "optionC": "Plátano Tabasco",
-    "optionD": "Plátano babanico",
-    "answer": "Plátano Valery",
-    "categoria": 2
-  },
-  {
-    "name": "En que comunidad se produce más la fritura la Malanga ",
-    "optionA": "Cerro Blanco",
-    "optionB": "Cuviac",
-    "optionC": "Madrigal",
-    "optionD": "Cuitláhuac",
-    "answer": "Madrigal",
-    "categoria": 2
-  },
-  {
-    "name": "Restaurante famoso en Jalapa que cocina la mejor marqueta de frijol criollo",
-    "optionA": "Mi Lupita",
-    "optionB": "Manantial",
-    "optionC": "La Llamarada",
-    "optionD": "El paso",
-    "answer": "Mi Lupita",
-    "categoria": 2
-  },
-  {
-    "name": "¿Donde se ubican los Talleres artesanales-gastronómicos de dulces de Joloche y Camote?",
-    "optionA": "Tacotalpa",
-    "optionB": "Jalapa",
-    "optionC": "Macuspana",
-    "optionD": "Teapa",
-    "answer": "Jalapa",
-    "categoria": 2
-  },
-  {
-    "name": "Producto prehispánico de origen maya elaborado de maíz, que en la actualidad distingue al municipio de Macuspana ",
-    "optionA": "Tortilla Gruesa",
-    "optionB": "Tortilla de maíz nuevo ",
-    "optionC": "Totoposte",
-    "optionD": "Tostada de coco",
-    "answer": "Totoposte",
-    "categoria": 2
-  },
-  {
-    "name": "Que platillo de la fonda “La Popular” se volvió famoso en la comunidad San Juan el alto en el municipio de Jalapa",
-    "optionA": "Caldo de Pavo criollo con Molleja",
-    "optionB": "Chirmol",
-    "optionC": "Tacos Gobernador ",
-    "optionD": "Frijol con puerco",
-    "answer": "Caldo de Pavo criollo con Molleja",
-    "categoria": 2
-  },
-  {
-    "name": "¿Cuál fue el primer restaurante que elaboró y dio a conocer el famoso Pishul?",
-    "optionA": "Kolemtium",
-    "optionB": "La Mariquita",
-    "optionC": "Kolem-jaa´",
-    "optionD": "Tulipan",
-    "answer": "La Mariquita",
-    "categoria": 2
   }
 ]

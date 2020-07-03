@@ -1,0 +1,16 @@
+.rewards {
+  background: url("https://quizsierra.000webhostapp.com/background2.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border: 1px solid darken(#f8f8f8, 10%);
+  border-radius: 5px;
+  padding: 1.5rem 3rem;
+  height: 100vh;
+}
+
+.card-image {
+  height: 20%;
+}
