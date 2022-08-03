@@ -3,8 +3,8 @@
 /* Add some content at the bottom of the video/page */
 
 .SubContent {
-  background: url("https://quizsierra.000webhostapp.com/background2.jpg")
-    no-repeat center center fixed;
+  background: url("../../assets/img/background.jpg") no-repeat center center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
