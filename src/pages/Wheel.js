@@ -41,8 +41,8 @@ export default class App extends Component {
         <div className="view">
           <div
             style={{
-              backgroundColor: "#035F00",
-              paddingTop: 10,
+              backgroundColor: "#438633",
+              paddingTop: 5,
             }}
           >
             <h1
@@ -65,17 +65,16 @@ export default class App extends Component {
 
           <div
             style={{
-              backgroundColor: "#035F00",
-              width: "50%",
+              backgroundColor: "#438633",
               textAlign: "center",
-              marginLeft: "25%",
+              padding: 10,
             }}
           >
             <h1
               style={{
                 fontWeight: "bolder",
                 color: "#FEDBB3",
-                fontSize: "20pt",
+                fontSize: "4rem",
               }}
             >
               Toca la ruleta para girar

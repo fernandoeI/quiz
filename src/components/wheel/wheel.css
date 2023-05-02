@@ -2,7 +2,7 @@
 .wheel-container {
   /* Vars */
   --wheel-font: "Lato", "Quicksand", sans-serif;
-  --wheel-size: 300px;
+  --wheel-size: 600px;
   --wheel-slice-spacing: 50px;
   --wheel-border-size: 5px;
   --wheel-color: #417991;

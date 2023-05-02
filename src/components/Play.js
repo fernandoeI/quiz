@@ -69,12 +69,8 @@ class Play extends Component {
   //Esta línea fue la que le agregué para jalar los datos de firebase, el problema es que los datos los pone después de que jala los datos del json
   componentDidMount = () => {
     shuffleArray(this.state.questions);
-    const {
-      questions,
-      currentQuestion,
-      nextQuestion,
-      previousQuestion,
-    } = this.state;
+    const { questions, currentQuestion, nextQuestion, previousQuestion } =
+      this.state;
     this.displayQuestions(
       questions,
       currentQuestion,
@@ -314,9 +310,8 @@ class Play extends Component {
               option.style.visibility = "hidden";
               this.setState((prevState) => ({
                 hints: prevState.hints - 1,
-                previousRandomNumbers: prevState.previousRandomNumbers.concat(
-                  randomNumber
-                ),
+                previousRandomNumbers:
+                  prevState.previousRandomNumbers.concat(randomNumber),
               }));
             }
           });
@@ -544,7 +539,7 @@ class Play extends Component {
                   </span>
                 </p>
               </div>
-              <h5 className="h5">{currentQuestion.name}</h5>
+              <h5 className="h3">{currentQuestion.name}</h5>
               <div className="options-container">
                 <p onClick={this.handleOptionClick} className="option">
                   {currentQuestion.optionA}
@@ -563,7 +558,9 @@ class Play extends Component {
               </div>
 
               <div className="button-container">
-                <button id="quit-button">Salir</button>
+                <button id="quit-button" onClick={this.handleQuitButtonClick}>
+                  Salir
+                </button>
               </div>
             </div>
           </div>

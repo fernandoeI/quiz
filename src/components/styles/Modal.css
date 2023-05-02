@@ -50,8 +50,6 @@
   display: block;
 }
 
-
-
 /*==========  Structure  ==========*/
 .btn-push {
   display: inline-block;
@@ -94,18 +92,18 @@
 }
 /*==========  Navy  ==========*/
 .btn-push.navy {
-  background: #f57936;
+  background: #438633;
   color: #fff;
-  border: 1px solid #bc4809;
+  border: 1px solid #438633;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 5px 0px #bc4809;
-  -moz-box-shadow: 0px 5px 0px #bc4809;
-  -ms-box-shadow: 0px 5px 0px #bc4809;
-  -o-box-shadow: 0px 5px 0px #bc4809;
-  box-shadow: 0px 5px 0px #bc4809;
-  text-shadow: 1px 1px 1px #bc4809;
+  -webkit-box-shadow: 0px 5px 0px #438633;
+  -moz-box-shadow: 0px 5px 0px #438633;
+  -ms-box-shadow: 0px 5px 0px #438633;
+  -o-box-shadow: 0px 5px 0px #438633;
+  box-shadow: 0px 5px 0px #438633;
+  text-shadow: 1px 1px 1px #438633;
 }
 
 .btn-push.green {

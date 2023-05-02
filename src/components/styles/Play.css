@@ -1,6 +1,6 @@
 .quizView {
-  background: url("../../assets/img/background-white.jpg") no-repeat center
-    center fixed;
+  background: url("../../assets/img/background.jpg") no-repeat center center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,7 +9,7 @@
 }
 
 .questions {
-  border-left: 5px solid#1da1f2;
+  border-left: 5px solid#438633;
   background-color: white;
   width: 90%;
   margin: 0 auto 0 auto;
@@ -40,8 +40,8 @@
   color: darken(#ffa500, 10%);
 }
 
-.h5 {
-  font-size: 1.2rem;
+.h3 {
+  font-size: 1.5rem;
   line-height: 1.5;
   text-align: center;
 }
@@ -51,19 +51,20 @@
 }
 
 .option {
-  background-color: #1da1f2;
+  background-color: #438633;
   border-radius: 30px;
+  font-size: 1.5rem;
   color: #fff;
   cursor: pointer;
   margin: 1rem auto;
-  padding: 1rem;
+  padding: 1.5rem;
   transition: 0.3s linear all;
   text-align: center;
   width: 90%;
 }
 
 .option :hover {
-  background-color: darken(#1da1f2, 50%);
+  background-color: darken(#438633, 50%);
 }
 
 .button-container {
@@ -84,14 +85,14 @@
 }
 
 .button-container button:first-child {
-  background-color: darken(#1da1f2, 10%);
+  background-color: darken(#438633, 10%);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   transition: 0.2s linear all;
 }
 
 .button-container button:first-child:hover {
-  background-color: darken(#1da1f2, 20%);
+  background-color: darken(#438633, 20%);
 }
 
 .button-container button:nth-child(2) {

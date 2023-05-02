@@ -135,29 +135,33 @@ class QuizSummary extends Component {
               <h4>{remark}</h4>
               <h4>Tu puntaje es: {this.state.score.toFixed(0)}&#37;</h4>
               <span className="stat left">Numero total de preguntas: </span>
-              <span className="right">{this.state.numberOfQuestions}</span>
+              <span className="stat right">{this.state.numberOfQuestions}</span>
+              <br />
               <br />
               <span className="stat left">
-                Numero de preguntas contestadas:{" "}
+                Numero de preguntas contestadas:
               </span>
-              <span className="right">
+              <span className="stat right">
                 {this.state.numberOfAnsweredQuestions}
               </span>
               <br />
+              <br />
+              <span className="stat left">Numero de respuestas correctas:</span>
+              <span className="stat right">{this.state.correctAnswers}</span>
+              <br />
+              <br />
               <span className="stat left">
-                Numero de respuestas correctas:{" "}
+                Numero de respuestas incorrectas:
               </span>
-              <span className="right">{this.state.correctAnswers}</span> <br />
-              <span className="stat left">
-                Numero de respuestas incorrectas:{" "}
-              </span>
-              <span className="right">{this.state.wrongAnswers}</span>
+              <span className="stat right">{this.state.wrongAnswers}</span>
+              <br />
               <br />
               <span className="stat left">Pistas usadas: </span>
-              <span className="right">{this.state.hintsUsed}</span>
+              <span className="stat right">{this.state.hintsUsed}</span>
+              <br />
               <br />
               <span className="stat left">50-50 usados: </span>
-              <span className="right">{this.state.fiftyFiftyUsed}</span>
+              <span className="stat right">{this.state.fiftyFiftyUsed}</span>
             </div>
             <section>
               <ul>

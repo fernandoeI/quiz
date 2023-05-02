@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import logo from "../assets/img/Logo.png";
+import logo from "../assets/img/logoBlanco.png";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import firebase from "firebase";
 import "./styles/Home.css";
@@ -26,7 +26,7 @@ class Home extends Component {
   };
   uiConfig = {
     signInFlow: "popup",
-    signInOptions: [firebase.auth.FacebookAuthProvider.PROVIDER_ID],
+    signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
     callbacks: {
       signInSuccessWithAuthResult: () => false,
     },
@@ -56,10 +56,10 @@ class Home extends Component {
     ) : (
       <Fragment>
         <Helmet>
-          <title>Turismo - Trivia</title>
+          <title>Visitetabasco - Trivia</title>
           <meta
             name="description"
-            content="Pon a prueba tus conocimientos, aprende y divierte en Pasaporte Tabasco - Aventura en la Sierra"
+            content="Pon a prueba tus conocimientos, aprende y divierte en Visitetabasco"
           />
         </Helmet>
 
@@ -67,7 +67,7 @@ class Home extends Component {
           {isSignedIn ? (
             <div>
               <div>
-                <img src={logo} alt="Logo Turismo" width="150" />
+                <img src={logo} alt="Logo Turismo" width="350" />
               </div>
               <div className="col s12 m12 l12">
                 <div className="card-panel grey lighten-5 z-depth-1">
@@ -93,7 +93,7 @@ class Home extends Component {
                       <br />
                       <br />
 
-                      <Link to="/rewards">
+                      {/*      <Link to="/rewards">
                         <RewardIcon
                           className="col s2"
                           style={{
@@ -125,7 +125,7 @@ class Home extends Component {
                             cursor: "pointer",
                           }}
                         />
-                      </Link>
+                      </Link> */}
 
                       <Score />
 
@@ -152,7 +152,7 @@ class Home extends Component {
           ) : (
             <div>
               <div>
-                <img src={logo} alt="Logo Turismo" width="200" />
+                <img src={logo} alt="Logo Turismo" width="350" />
               </div>
               <StyledFirebaseAuth
                 uiConfig={this.uiConfig}
